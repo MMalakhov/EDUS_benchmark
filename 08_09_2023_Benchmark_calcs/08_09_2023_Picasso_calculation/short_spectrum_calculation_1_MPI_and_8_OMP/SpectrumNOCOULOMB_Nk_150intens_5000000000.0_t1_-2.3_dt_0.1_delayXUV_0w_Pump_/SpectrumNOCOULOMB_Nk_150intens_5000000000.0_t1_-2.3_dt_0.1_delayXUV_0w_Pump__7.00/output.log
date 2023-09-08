@@ -1,0 +1,1430 @@
+omp_get_max_threads()8
+Running the program with   1 cpu,   8 threads 
+Starting read input...
+End read input...
+____________________________
+unit cell area = 19.329
+Sample orientation = 011
+____________________________
+
+
+
+
+*********************************************************************************************
+*                                   Shell calculation                                       *
+*********************************************************************************************
+*         | Shell |                Bvectors              |   Norm    | norm(q1-q) | Dependent? |         *
+*         -------------------------------------------------------------------------         *
+*         |    0  |    0.00000    -0.01024     0.00000   |  0.01024  |  1.14e-04  |     NO     |         *
+*         |    0  |    0.00000    -0.00512    -0.00887   |  0.01024  |  1.14e-04  |     NO     |         *
+*         |    0  |    0.00000    -0.00512     0.00887   |  0.01024  |  1.14e-04  |     NO     |         *
+*         |    0  |    0.00000     0.00512    -0.00887   |  0.01024  |  1.14e-04  |     NO     |         *
+*         |    0  |    0.00000     0.00512     0.00887   |  0.01024  |  1.14e-04  |     NO     |         *
+*         |    0  |    0.00000     0.01024    -0.00000   |  0.01024  |  1.14e-04  |     NO     |         *
+*         -------------------------------------------------------------------------         *
+*         |    1  |    0.00000    -0.01536    -0.00887   |  0.01773  |  7.14e-16  |     NO     |         *
+*         |    1  |    0.00000    -0.01536     0.00887   |  0.01773  |  7.14e-16  |     NO     |         *
+*         |    1  |    0.00000     0.00000    -0.01773   |  0.01773  |  7.14e-16  |     NO     |         *
+*         |    1  |    0.00000     0.00000     0.01773   |  0.01773  |  7.14e-16  |     NO     |         *
+*         |    1  |    0.00000     0.01536    -0.00887   |  0.01773  |  7.14e-16  |     NO     |         *
+*         |    1  |    0.00000     0.01536     0.00887   |  0.01773  |  7.14e-16  |     NO     |         *
+*         -------------------------------------------------------------------------         *
+Calculation ready to start.
+
+
+*********************************************************************************************
+*                                          NEWINPUT                                     *
+*********************************************************************************************
+
+*********************************************************************************************
+*                              Summary of parameters                                        *
+*********************************************************************************************
+*  dt                      0.0024 fs   - 0.1000 au                                          *
+*  iCurrent:                                  true                                          *
+*  Model:                                       TB                                          *
+*  TB type:                   Haldane_CoreBN_Nedge                                          *
+*  FermiEnergy:              0.0000                                                         *
+*********************************************************************************************
+*                                    Unit cell                                              *
+*********************************************************************************************
+*                      a.u.                                   Angstrom                      *
+*  a1  ->     (   6.33,    0.00,    0.00)           (   3.35,    0.00,    0.00)             *
+*  a2  ->     (   0.00,    4.09,    2.36)           (   0.00,    2.17,    1.25)             *
+*  a3  ->     (   0.00,    4.09,   -2.36)           (   0.00,    2.17,   -1.25)             *
+*                                                                                           *
+*                               Reciprocal lattice vectors:                                 *
+*                         a.u.                               Angstrom^-1                    *
+*  b1  ->     (   0.99,   -0.00,   -0.00)           (   1.88,   -0.00,   -0.00)             *
+*  b2  ->     (  -0.00,    0.77,    1.33)           (  -0.00,    1.45,    2.51)             *
+*  b3  ->     (  -0.00,    0.77,   -1.33)           (  -0.00,    1.45,   -2.51)             *
+*                                                                                           *
+*  Jacobian determinant: 2.0272                                                             *
+*********************************************************************************************
+*  k-space:      (#k1,#k2,#k3) -> (  1, 150, 150)                                           *
+*  k-space resolution:         -> (1.0000, 0.0067, 0.0067)                                  *
+*********************************************************************************************
+*                                   Band types:                                             *
+*********************************************************************************************
+*   # conduction bands:   1                                                                 *
+*   # valence bands:      1                                                                 *
+*   # core-hole bands:    1                                                                 *
+*********************************************************************************************
+*                               Dissipation terms                                           *
+*********************************************************************************************
+*   Dissipation factor T1:      0.000a.u.     -     0.000eV                                 *
+*   Dissipation factor T2:      0.000a.u.     -     0.000eV                                 *
+*   Decay core-hole factor Tch: 0.004a.u.     -     0.108eV                                 *
+*********************************************************************************************
+*                   Optical/IR laser parameters - Pump:                                     *
+*********************************************************************************************
+*  Energy                                    0.25713 au       6.99677 eV                    *
+*  Wavelength                             3347.51485 au     177.14286 nm                    *
+*  Period                                   24.43618 au       0.59108 fs                    *
+*  A0                                    1.46786e-03 au   1.46786e-03 V s/m                 *
+*  E0                                    3.77426e-04 au   1.94080e-02 V/ang                 *
+*  Intensity                             1.42473e-07 au   5.00000e+09 W/cm^2                *
+*  t0=                                   0.00000e+00 au   0.00000e+00 fs                    *
+*  tf=                                   1.71053e+02 au   4.13758e+00 fs                    *
+*  polarization vectors ->         (0.0000,1.0000,0.0000) (0.0000,0.0000,1.0000)            *
+*  sin2 profile:     number of cycles:                   7.00                               *
+*********************************************************************************************
+*                         XUV laser parameters - Probe:                                     *
+*********************************************************************************************
+*  Energy                                   15.06000 au     409.80362 eV                    *
+*  Wavelength                               57.15367 au       3.02444 nm                    *
+*  Period                                    0.41721 au       0.01009 fs                    *
+*  A0                                    1.12078e-06 au   1.12078e-06 V s/m                 *
+*  E0                                    1.68790e-05 au   8.67953e-04 V/ang                 *
+*  Intensity                             2.84945e-10 au   1.00000e+07 W/cm^2                *
+*  t0=                                   8.48367e+01 au   2.05210e+00 fs                    *
+*  tf=                                   8.62165e+01 au   2.08548e+00 fs                    *
+*  polarization vectors ->         (1.0000,0.0000,0.0000) (0.0000,0.0000,0.0000)            *
+*  Gaussian profile: Sigma(fs):                          0.08                               *
+*  FWHM(fs):                                             0.19                               *
+*  FWHM Intensity(fs):                                   0.13                               *
+*  Delay time:                                    0.00 au -     0.00 fs                     *
+*********************************************************************************************
+
+time step dt is dynamical
+Input file read.
+   Taylot solver of oder   6
+rank_ 0: I have 22500 k points in this cpu
+Printing test matrices for check...
+ my_rank 0
+ kpt.n1 22500 kpt.n2 3
+ kpt[0][0] 0 kpt[0][1] -0.5 kpt[0][2] -0.5
+ 
+ 
+ 
+*****************************************************
+*    Allocating memory for the calculation...       *
+*****************************************************
+->    Allocated k points  
+                Memory required ~ 0.5150 Mb
+->    Allocated H,U,D  
+                Memory required ~ 15.4495 Mb
+->    Allocated Pb, P0, P1, P2, Pv for permanent and temporary density matrix and for Runge-Kutta steps  
+                Memory required ~ 12.3596 Mb
+->    Allocated decoherent tensor T  
+                Memory required ~ 0.0001 Mb
+ 
+ 
+ 
+*****************************************************
+*     Initializing vectors for the calculation      *
+*****************************************************
+->    Decoherence tensor T initialized. 
+
+
+
+*****************************************************
+*    Changing directory and creating files for      *
+*                     the output                    *
+*****************************************************
+->     Losses.txt opened  
+->     EF.txt opened  
+->     J1.txt opened  
+->     J2.txt opened  
+->     J3.txt opened  
+->     Jintra.txt opened  
+->     TransientAbs.txt opened  
+Saving matrices H,U,D...
+end of saving matrices. 
+Saving gradient of energy...
+done
+
+
+
+Calculation started day 2023/09/08 at 12.07.47 
+
+*****************************************************
+*            Time evolution with TDSE               *
+*****************************************************
+Number of steps: 1710 
+Final time: 171.05
+ ******************** 
+ my_rank 0
+ Nk[1] 150
+ kpt size 22500
+ nk 22500
+
+
+n_diss_terms 5
+ leftover 4 lenght_k_omp: 2813
+ nk on node: 22500 begin_count: 5626 end_count: 8439
+
+ leftover 4 lenght_k_omp: 2813
+ nk on node: 22500 begin_count: 2813 end_count: 5626
+
+ leftover 4 lenght_k_omp: 2812
+ nk on node: 22500 begin_count: 11252 end_count: 14064
+
+ leftover 4 lenght_k_omp: 2812
+ nk on node: 22500 begin_count: 14064 end_count: 16876
+
+ leftover 4 lenght_k_omp: 2812
+ nk on node: 22500 begin_count: 16876 end_count: 19688
+
+ leftover 4 lenght_k_omp: 2813
+ nk on node: 22500 begin_count: 8439 end_count: 11252
+
+ leftover 4 lenght_k_omp: 2812
+ nk on node: 22500 begin_count: 19688 end_count: 22500
+
+ leftover 4 lenght_k_omp: 2813
+ nk on node: 22500 begin_count: 0 end_count: 2813
+
+ ******************** 
+ my_rank 0
+ it: 0 time: -0.21 fs, time fin: 4 fs
+Output/H_Eigen_cond_22_0.txt
+Output/H_Eigen_val_11_0.txt
+Output/H_Eigen_val_cond_12_0.txt
+Output/H_Eigen__00_0.txt
+Output/H_Wannier_cond_22_0.txt
+Output/H_Wannier_val_cond_12_0.txt
+Output/H_Wannier_val_11_0.txt
+Output/P_initial_Wannier__22_0.txt
+Output/P_initial_Wannier__12_0.txt
+Output/P_initial_Wannier__11_0.txt
+Output/P_initial_Wannier_core_01_0.txt
+Output/P_initial_Wannier_core_02_0.txt
+Output/Uk__22_0.txt
+Output/Uk__21_0.txt
+  order i= 1 Delta_Pk_max = 7.09008e-17Pv_max = 7.09008e-16
+  order i= 2 Delta_Pk_max = 8.09451e-17  alpha_max[i]= 1.6189e-14
+  order i= 3 Delta_Pk_max = 4.4313e-17  alpha_max[i]= 1.32939e-13
+  order i= 4 Delta_Pk_max = 1.25553e-17  alpha_max[i]= 5.02214e-13
+  order i= 5 Delta_Pk_max = 1.77252e-18  alpha_max[i]= 8.8626e-13
+  order i= 6 Delta_Pk_max = 9.84733e-20  alpha_max[i]= 5.9084e-13
+
+ dtDynamic: 0.1 a.u. or 2.41888 as  ||| max_dP = 0 epsStep =0.02 time_loop fs: -0.21
+ P_cond_max 8.88178e-16
+ n_cond 0
+ it: 100 time: 0.0318884 fs, time fin: 4 fs
+ dtDynamic: 0.1 a.u. or 2.41888 as  ||| max_dP = 9.36742e-06 epsStep =0.02 time_loop fs: 0.0318884
+ P_cond_max 1.00808e-13
+ n_cond 4.92275e-15
+Negative population, P_min = -2.10054e-13
+Negative population, P_min = -2.90878e-13
+Negative population, P_min = -1.31903e-12
+Negative population, P_min = -2.1796e-12
+ it: 200 time: 0.273777 fs, time fin: 4 fs
+Negative population, P_min = -1.27409e-12
+ dtDynamic: 0.1 a.u. or 2.41888 as  ||| max_dP = 0.00590399 epsStep =0.02 time_loop fs: 0.273777
+ P_cond_max 6.48816e-09
+ n_cond 1.2586e-09
+Negative population, P_min = -2.36033e-12
+Negative population, P_min = -1.23448e-11
+Negative population, P_min = -5.53589e-11
+Negative population, P_min = -4.05967e-12
+Negative population, P_min = -6.64246e-12
+!!!!!!!! dt too large  max_dP = 0.0203737 dtDynamic: 0.0992487 a.u. or 2.40071 as
+!!!!!!!! dt too large  max_dP = 0.0203603 dtDynamic: 0.0974281 a.u. or 2.35667 as
+!!!!!!!! dt too large  max_dP = 0.0203466 dtDynamic: 0.0957039 a.u. or 2.31497 as
+!!!!!!!! dt too large  max_dP = 0.0203337 dtDynamic: 0.0940736 a.u. or 2.27553 as
+Negative population, P_min = -1.09329e-13
+!!!!!!!! dt too large  max_dP = 0.0204521 dtDynamic: 0.0981932 a.u. or 2.37518 as
+!!!!!!!! dt too large  max_dP = 0.0203323 dtDynamic: 0.0960225 a.u. or 2.32267 as
+!!!!!!!! dt too large  max_dP = 0.0203176 dtDynamic: 0.0944531 a.u. or 2.28471 as
+!!!!!!!! dt too large  max_dP = 0.0203074 dtDynamic: 0.0929765 a.u. or 2.249 as
+!!!!!!!! dt too large  max_dP = 0.0202949 dtDynamic: 0.091569 a.u. or 2.21495 as
+!!!!!!!! dt too large  max_dP = 0.0202864 dtDynamic: 0.0902386 a.u. or 2.18277 as
+!!!!!!!! dt too large  max_dP = 0.0202764 dtDynamic: 0.0889645 a.u. or 2.15195 as
+!!!!!!!! dt too large  max_dP = 0.0202295 dtDynamic: 0.0931227 a.u. or 2.25253 as
+!!!!!!!! dt too large  max_dP = 0.0202824 dtDynamic: 0.0920662 a.u. or 2.22698 as
+!!!!!!!! dt too large  max_dP = 0.0202717 dtDynamic: 0.0907841 a.u. or 2.19596 as
+!!!!!!!! dt too large  max_dP = 0.0202633 dtDynamic: 0.0895673 a.u. or 2.16653 as
+!!!!!!!! dt too large  max_dP = 0.0202536 dtDynamic: 0.0884036 a.u. or 2.13838 as
+!!!!!!!! dt too large  max_dP = 0.0202463 dtDynamic: 0.0872967 a.u. or 2.11161 as
+!!!!!!!! dt too large  max_dP = 0.0202385 dtDynamic: 0.0862346 a.u. or 2.08592 as
+Negative population, P_min = -6.89948e-11
+!!!!!!!! dt too large  max_dP = 0.0202483 dtDynamic: 0.0900389 a.u. or 2.17794 as
+!!!!!!!! dt too large  max_dP = 0.0202399 dtDynamic: 0.0889346 a.u. or 2.15123 as
+!!!!!!!! dt too large  max_dP = 0.0202326 dtDynamic: 0.0878807 a.u. or 2.12573 as
+!!!!!!!! dt too large  max_dP = 0.0202247 dtDynamic: 0.0868703 a.u. or 2.10129 as
+!!!!!!!! dt too large  max_dP = 0.0202182 dtDynamic: 0.0859053 a.u. or 2.07795 as
+!!!!!!!! dt too large  max_dP = 0.0202118 dtDynamic: 0.084978 a.u. or 2.05552 as
+!!!!!!!! dt too large  max_dP = 0.0206116 dtDynamic: 0.0910191 a.u. or 2.20165 as
+!!!!!!!! dt too large  max_dP = 0.0202182 dtDynamic: 0.0883183 a.u. or 2.13632 as
+!!!!!!!! dt too large  max_dP = 0.0202101 dtDynamic: 0.0873649 a.u. or 2.11326 as
+!!!!!!!! dt too large  max_dP = 0.0202044 dtDynamic: 0.0864569 a.u. or 2.09129 as
+ it: 300 time: 0.50473 fs, time fin: 4 fs
+Negative population, P_min = -8.82968e-12
+ dtDynamic: 0.0856177 a.u. or 2.07099 as  ||| max_dP = 0.0181938 epsStep =0.02 time_loop fs: 0.50473
+ P_cond_max 2.39289e-07
+ n_cond 3.8626e-08
+!!!!!!!! dt too large  max_dP = 0.0205226 dtDynamic: 0.0908582 a.u. or 2.19776 as
+!!!!!!!! dt too large  max_dP = 0.0202007 dtDynamic: 0.0885444 a.u. or 2.14179 as
+Negative population, P_min = -6.99744e-11
+!!!!!!!! dt too large  max_dP = 0.0204707 dtDynamic: 0.0914505 a.u. or 2.21208 as
+Negative population, P_min = -8.3392e-11
+!!!!!!!! dt too large  max_dP = 0.0204282 dtDynamic: 0.0925645 a.u. or 2.23903 as
+!!!!!!!! dt too large  max_dP = 0.0203756 dtDynamic: 0.0941164 a.u. or 2.27657 as
+!!!!!!!! dt too large  max_dP = 0.0203403 dtDynamic: 0.0961241 a.u. or 2.32513 as
+!!!!!!!! dt too large  max_dP = 0.0203249 dtDynamic: 0.0984971 a.u. or 2.38253 as
+!!!!!!!! dt too large  max_dP = 0.020309 dtDynamic: 0.101142 a.u. or 2.4465 as
+Negative population, P_min = -2.39472e-10
+Negative population, P_min = -2.16463e-10
+Negative population, P_min = -2.71085e-10
+ it: 400 time: 0.732953 fs, time fin: 4 fs
+Negative population, P_min = -2.96772e-10
+ dtDynamic: 0.101158 a.u. or 2.4469 as  ||| max_dP = 0.0174421 epsStep =0.02 time_loop fs: 0.732953
+ P_cond_max 2.07551e-06
+ n_cond 3.00821e-07
+Negative population, P_min = -6.62581e-13
+Negative population, P_min = -3.18187e-10
+Negative population, P_min = -6.29186e-10
+!!!!!!!! dt too large  max_dP = 0.0203873 dtDynamic: 0.101055 a.u. or 2.44441 as
+!!!!!!!! dt too large  max_dP = 0.0203656 dtDynamic: 0.0991354 a.u. or 2.39797 as
+Negative population, P_min = -6.83583e-10
+!!!!!!!! dt too large  max_dP = 0.0202176 dtDynamic: 0.0973557 a.u. or 2.35492 as
+!!!!!!!! dt too large  max_dP = 0.0203318 dtDynamic: 0.096308 a.u. or 2.32958 as
+!!!!!!!! dt too large  max_dP = 0.0203137 dtDynamic: 0.0947365 a.u. or 2.29157 as
+!!!!!!!! dt too large  max_dP = 0.0202987 dtDynamic: 0.0932736 a.u. or 2.25618 as
+!!!!!!!! dt too large  max_dP = 0.020283 dtDynamic: 0.0919011 a.u. or 2.22298 as
+!!!!!!!! dt too large  max_dP = 0.0202685 dtDynamic: 0.0906189 a.u. or 2.19197 as
+!!!!!!!! dt too large  max_dP = 0.0202545 dtDynamic: 0.0894184 a.u. or 2.16293 as
+!!!!!!!! dt too large  max_dP = 0.0202409 dtDynamic: 0.0882949 a.u. or 2.13575 as
+!!!!!!!! dt too large  max_dP = 0.0202278 dtDynamic: 0.087244 a.u. or 2.11033 as
+!!!!!!!! dt too large  max_dP = 0.020215 dtDynamic: 0.0862617 a.u. or 2.08657 as
+Negative population, P_min = -4.83556e-10
+Negative population, P_min = -2.95131e-10
+!!!!!!!! dt too large  max_dP = 0.0204039 dtDynamic: 0.0814287 a.u. or 1.96967 as
+!!!!!!!! dt too large  max_dP = 0.0203666 dtDynamic: 0.0808301 a.u. or 1.95519 as
+ it: 500 time: 0.96515 fs, time fin: 4 fs
+ dtDynamic: 0.0805186 a.u. or 1.94765 as  ||| max_dP = 0.0201103 epsStep =0.02 time_loop fs: 0.96515
+ P_cond_max 9.86578e-06
+ n_cond 1.28268e-06
+!!!!!!!! dt too large  max_dP = 0.0202152 dtDynamic: 0.082129 a.u. or 1.9866 as
+!!!!!!!! dt too large  max_dP = 0.0202445 dtDynamic: 0.0855305 a.u. or 2.06888 as
+!!!!!!!! dt too large  max_dP = 0.0203589 dtDynamic: 0.0838892 a.u. or 2.02918 as
+!!!!!!!! dt too large  max_dP = 0.0203437 dtDynamic: 0.0824104 a.u. or 1.99341 as
+!!!!!!!! dt too large  max_dP = 0.0203306 dtDynamic: 0.0810182 a.u. or 1.95974 as
+!!!!!!!! dt too large  max_dP = 0.0203183 dtDynamic: 0.0797005 a.u. or 1.92786 as
+!!!!!!!! dt too large  max_dP = 0.0203063 dtDynamic: 0.0784518 a.u. or 1.89766 as
+!!!!!!!! dt too large  max_dP = 0.0202952 dtDynamic: 0.0772684 a.u. or 1.86903 as
+!!!!!!!! dt too large  max_dP = 0.0202844 dtDynamic: 0.0761445 a.u. or 1.84185 as
+!!!!!!!! dt too large  max_dP = 0.0202741 dtDynamic: 0.0750769 a.u. or 1.81602 as
+!!!!!!!! dt too large  max_dP = 0.0202562 dtDynamic: 0.0736982 a.u. or 1.78267 as
+!!!!!!!! dt too large  max_dP = 0.0202454 dtDynamic: 0.0727661 a.u. or 1.76013 as
+!!!!!!!! dt too large  max_dP = 0.0202373 dtDynamic: 0.0718843 a.u. or 1.7388 as
+!!!!!!!! dt too large  max_dP = 0.0202281 dtDynamic: 0.0710415 a.u. or 1.71841 as
+!!!!!!!! dt too large  max_dP = 0.0202199 dtDynamic: 0.0702403 a.u. or 1.69903 as
+!!!!!!!! dt too large  max_dP = 0.0202116 dtDynamic: 0.0694765 a.u. or 1.68056 as
+!!!!!!!! dt too large  max_dP = 0.0202036 dtDynamic: 0.068749 a.u. or 1.66296 as
+!!!!!!!! dt too large  max_dP = 0.0204323 dtDynamic: 0.0638102 a.u. or 1.5435 as
+!!!!!!!! dt too large  max_dP = 0.0202509 dtDynamic: 0.0620522 a.u. or 1.50097 as
+!!!!!!!! dt too large  max_dP = 0.0203781 dtDynamic: 0.0624784 a.u. or 1.51128 as
+!!!!!!!! dt too large  max_dP = 0.0203306 dtDynamic: 0.0625455 a.u. or 1.5129 as
+!!!!!!!! dt too large  max_dP = 0.020282 dtDynamic: 0.0627592 a.u. or 1.51807 as
+Negative population, P_min = -3.60706e-10
+!!!!!!!! dt too large  max_dP = 0.0202732 dtDynamic: 0.0643867 a.u. or 1.55744 as
+Negative population, P_min = -5.50196e-10
+!!!!!!!! dt too large  max_dP = 0.0203148 dtDynamic: 0.0702092 a.u. or 1.69828 as
+!!!!!!!! dt too large  max_dP = 0.0203055 dtDynamic: 0.0691212 a.u. or 1.67196 as
+!!!!!!!! dt too large  max_dP = 0.0202962 dtDynamic: 0.0680812 a.u. or 1.6468 as
+!!!!!!!! dt too large  max_dP = 0.0202873 dtDynamic: 0.0670878 a.u. or 1.62278 as
+!!!!!!!! dt too large  max_dP = 0.0202791 dtDynamic: 0.0661377 a.u. or 1.59979 as
+!!!!!!!! dt too large  max_dP = 0.0202712 dtDynamic: 0.0652274 a.u. or 1.57778 as
+!!!!!!!! dt too large  max_dP = 0.0202635 dtDynamic: 0.0643549 a.u. or 1.55667 as
+Negative population, P_min = -2.78558e-10
+!!!!!!!! dt too large  max_dP = 0.0202504 dtDynamic: 0.0633107 a.u. or 1.53141 as
+!!!!!!!! dt too large  max_dP = 0.0202422 dtDynamic: 0.0625278 a.u. or 1.51247 as
+!!!!!!!! dt too large  max_dP = 0.0202362 dtDynamic: 0.0617797 a.u. or 1.49438 as
+!!!!!!!! dt too large  max_dP = 0.0202294 dtDynamic: 0.0610585 a.u. or 1.47693 as
+!!!!!!!! dt too large  max_dP = 0.0202232 dtDynamic: 0.0603661 a.u. or 1.46019 as
+!!!!!!!! dt too large  max_dP = 0.0202171 dtDynamic: 0.0596998 a.u. or 1.44407 as
+!!!!!!!! dt too large  max_dP = 0.0202112 dtDynamic: 0.0590587 a.u. or 1.42856 as
+!!!!!!!! dt too large  max_dP = 0.0202054 dtDynamic: 0.0584416 a.u. or 1.41363 as
+!!!!!!!! dt too large  max_dP = 0.0205952 dtDynamic: 0.0584207 a.u. or 1.41313 as
+ it: 600 time: 1.12684 fs, time fin: 4 fs
+Negative population, P_min = -4.41676e-10
+ dtDynamic: 0.0541831 a.u. or 1.31063 as  ||| max_dP = 0.0199346 epsStep =0.02 time_loop fs: 1.12684
+ P_cond_max 2.3081e-05
+ n_cond 2.76909e-06
+!!!!!!!! dt too large  max_dP = 0.0204802 dtDynamic: 0.0541831 a.u. or 1.31063 as
+!!!!!!!! dt too large  max_dP = 0.0203646 dtDynamic: 0.0515342 a.u. or 1.24655 as
+Negative population, P_min = -1.73088e-11
+!!!!!!!! dt too large  max_dP = 0.0202291 dtDynamic: 0.0503134 a.u. or 1.21702 as
+!!!!!!!! dt too large  max_dP = 0.0203951 dtDynamic: 0.0505859 a.u. or 1.22361 as
+!!!!!!!! dt too large  max_dP = 0.02036 dtDynamic: 0.050598 a.u. or 1.22391 as
+!!!!!!!! dt too large  max_dP = 0.0202818 dtDynamic: 0.0516072 a.u. or 1.24832 as
+!!!!!!!! dt too large  max_dP = 0.0202377 dtDynamic: 0.0519081 a.u. or 1.2556 as
+!!!!!!!! dt too large  max_dP = 0.0202096 dtDynamic: 0.0586223 a.u. or 1.41801 as
+!!!!!!!! dt too large  max_dP = 0.0203327 dtDynamic: 0.0580142 a.u. or 1.4033 as
+!!!!!!!! dt too large  max_dP = 0.0206922 dtDynamic: 0.0582062 a.u. or 1.40794 as
+!!!!!!!! dt too large  max_dP = 0.020281 dtDynamic: 0.0562591 a.u. or 1.36084 as
+!!!!!!!! dt too large  max_dP = 0.0202458 dtDynamic: 0.0554796 a.u. or 1.34199 as
+!!!!!!!! dt too large  max_dP = 0.0202387 dtDynamic: 0.0548061 a.u. or 1.3257 as
+!!!!!!!! dt too large  max_dP = 0.0202159 dtDynamic: 0.0541596 a.u. or 1.31006 as
+!!!!!!!! dt too large  max_dP = 0.020205 dtDynamic: 0.0535812 a.u. or 1.29607 as
+!!!!!!!! dt too large  max_dP = 0.020426 dtDynamic: 0.0526794 a.u. or 1.27425 as
+!!!!!!!! dt too large  max_dP = 0.0204999 dtDynamic: 0.0493402 a.u. or 1.19348 as
+!!!!!!!! dt too large  max_dP = 0.0204098 dtDynamic: 0.0463985 a.u. or 1.12233 as
+!!!!!!!! dt too large  max_dP = 0.0203155 dtDynamic: 0.0444787 a.u. or 1.07589 as
+ it: 700 time: 1.24766 fs, time fin: 4 fs
+Negative population, P_min = -2.50909e-10
+ dtDynamic: 0.0435258 a.u. or 1.05284 as  ||| max_dP = 0.0197649 epsStep =0.02 time_loop fs: 1.24766
+ P_cond_max 3.96611e-05
+ n_cond 4.47546e-06
+!!!!!!!! dt too large  max_dP = 0.0202045 dtDynamic: 0.0435258 a.u. or 1.05284 as
+Negative population, P_min = -6.25767e-10
+!!!!!!!! dt too large  max_dP = 0.020357 dtDynamic: 0.0443792 a.u. or 1.07348 as
+!!!!!!!! dt too large  max_dP = 0.0203251 dtDynamic: 0.044473 a.u. or 1.07575 as
+!!!!!!!! dt too large  max_dP = 0.0202929 dtDynamic: 0.044637 a.u. or 1.07972 as
+!!!!!!!! dt too large  max_dP = 0.0202577 dtDynamic: 0.0448725 a.u. or 1.08541 as
+Negative population, P_min = -1.80616e-11
+!!!!!!!! dt too large  max_dP = 0.0203437 dtDynamic: 0.0508926 a.u. or 1.23103 as
+!!!!!!!! dt too large  max_dP = 0.0202717 dtDynamic: 0.0500328 a.u. or 1.21024 as
+!!!!!!!! dt too large  max_dP = 0.0202454 dtDynamic: 0.0493621 a.u. or 1.19401 as
+!!!!!!!! dt too large  max_dP = 0.0202327 dtDynamic: 0.0487638 a.u. or 1.17954 as
+!!!!!!!! dt too large  max_dP = 0.0202144 dtDynamic: 0.0482029 a.u. or 1.16597 as
+!!!!!!!! dt too large  max_dP = 0.020202 dtDynamic: 0.0476916 a.u. or 1.15361 as
+!!!!!!!! dt too large  max_dP = 0.0203702 dtDynamic: 0.0469043 a.u. or 1.13456 as
+!!!!!!!! dt too large  max_dP = 0.0202627 dtDynamic: 0.0449331 a.u. or 1.08688 as
+!!!!!!!! dt too large  max_dP = 0.0203823 dtDynamic: 0.0432762 a.u. or 1.0468 as
+!!!!!!!! dt too large  max_dP = 0.0202942 dtDynamic: 0.0415046 a.u. or 1.00395 as
+ it: 800 time: 1.35348 fs, time fin: 4 fs
+ dtDynamic: 0.040455 a.u. or 0.978561 as  ||| max_dP = 0.0196654 epsStep =0.02 time_loop fs: 1.35348
+ P_cond_max 6.04985e-05
+ n_cond 6.46402e-06
+!!!!!!!! dt too large  max_dP = 0.020389 dtDynamic: 0.041131 a.u. or 0.994912 as
+!!!!!!!! dt too large  max_dP = 0.0203619 dtDynamic: 0.0411533 a.u. or 0.99545 as
+!!!!!!!! dt too large  max_dP = 0.0203353 dtDynamic: 0.0412303 a.u. or 0.997313 as
+!!!!!!!! dt too large  max_dP = 0.0203063 dtDynamic: 0.0413616 a.u. or 1.00049 as
+!!!!!!!! dt too large  max_dP = 0.0202134 dtDynamic: 0.0428188 a.u. or 1.03574 as
+!!!!!!!! dt too large  max_dP = 0.0206017 dtDynamic: 0.0461033 a.u. or 1.11518 as
+!!!!!!!! dt too large  max_dP = 0.020218 dtDynamic: 0.0447568 a.u. or 1.08262 as
+!!!!!!!! dt too large  max_dP = 0.0202909 dtDynamic: 0.042983 a.u. or 1.03971 as
+!!!!!!!! dt too large  max_dP = 0.0202116 dtDynamic: 0.0416098 a.u. or 1.00649 as
+!!!!!!!! dt too large  max_dP = 0.0203914 dtDynamic: 0.0416969 a.u. or 1.0086 as
+!!!!!!!! dt too large  max_dP = 0.0203709 dtDynamic: 0.0422974 a.u. or 1.02312 as
+!!!!!!!! dt too large  max_dP = 0.0203593 dtDynamic: 0.0423577 a.u. or 1.02458 as
+!!!!!!!! dt too large  max_dP = 0.020455 dtDynamic: 0.0424424 a.u. or 1.02663 as
+!!!!!!!! dt too large  max_dP = 0.0203012 dtDynamic: 0.0416485 a.u. or 1.00743 as
+!!!!!!!! dt too large  max_dP = 0.0202055 dtDynamic: 0.0404701 a.u. or 0.978924 as
+Negative population, P_min = -1.96064e-10
+!!!!!!!! dt too large  max_dP = 0.0203895 dtDynamic: 0.0406625 a.u. or 0.98358 as
+!!!!!!!! dt too large  max_dP = 0.0203625 dtDynamic: 0.0406835 a.u. or 0.984086 as
+ it: 900 time: 1.45337 fs, time fin: 4 fs
+ dtDynamic: 0.0407584 a.u. or 0.985899 as  ||| max_dP = 0.0195657 epsStep =0.02 time_loop fs: 1.45337
+ P_cond_max 8.659e-05
+ n_cond 8.78384e-06
+!!!!!!!! dt too large  max_dP = 0.020278 dtDynamic: 0.0415736 a.u. or 1.00562 as
+!!!!!!!! dt too large  max_dP = 0.0202848 dtDynamic: 0.0418236 a.u. or 1.01167 as
+!!!!!!!! dt too large  max_dP = 0.0202496 dtDynamic: 0.0420612 a.u. or 1.01741 as
+!!!!!!!! dt too large  max_dP = 0.0202118 dtDynamic: 0.0423736 a.u. or 1.02497 as
+!!!!!!!! dt too large  max_dP = 0.0202173 dtDynamic: 0.0444959 a.u. or 1.0763 as
+!!!!!!!! dt too large  max_dP = 0.0202513 dtDynamic: 0.0445703 a.u. or 1.0781 as
+!!!!!!!! dt too large  max_dP = 0.0202275 dtDynamic: 0.0440172 a.u. or 1.06472 as
+!!!!!!!! dt too large  max_dP = 0.0202175 dtDynamic: 0.0435222 a.u. or 1.05275 as
+!!!!!!!! dt too large  max_dP = 0.0202007 dtDynamic: 0.0430539 a.u. or 1.04142 as
+Negative population, P_min = -6.7285e-10
+!!!!!!!! dt too large  max_dP = 0.0203157 dtDynamic: 0.0430723 a.u. or 1.04187 as
+Negative population, P_min = -6.30112e-10
+!!!!!!!! dt too large  max_dP = 0.0202129 dtDynamic: 0.0410555 a.u. or 0.993085 as
+Negative population, P_min = -5.47696e-10
+!!!!!!!! dt too large  max_dP = 0.0203893 dtDynamic: 0.041063 a.u. or 0.993266 as
+!!!!!!!! dt too large  max_dP = 0.0203774 dtDynamic: 0.0410846 a.u. or 0.993788 as
+!!!!!!!! dt too large  max_dP = 0.0203652 dtDynamic: 0.0411302 a.u. or 0.994893 as
+!!!!!!!! dt too large  max_dP = 0.0203456 dtDynamic: 0.0418565 a.u. or 1.01246 as
+!!!!!!!! dt too large  max_dP = 0.0203348 dtDynamic: 0.0419684 a.u. or 1.01517 as
+!!!!!!!! dt too large  max_dP = 0.0203233 dtDynamic: 0.042103 a.u. or 1.01842 as
+!!!!!!!! dt too large  max_dP = 0.0203126 dtDynamic: 0.0422619 a.u. or 1.02227 as
+!!!!!!!! dt too large  max_dP = 0.0204512 dtDynamic: 0.0431896 a.u. or 1.04471 as
+!!!!!!!! dt too large  max_dP = 0.0203891 dtDynamic: 0.0430414 a.u. or 1.04112 as
+!!!!!!!! dt too large  max_dP = 0.020356 dtDynamic: 0.0430644 a.u. or 1.04168 as
+!!!!!!!! dt too large  max_dP = 0.0203279 dtDynamic: 0.0431575 a.u. or 1.04393 as
+!!!!!!!! dt too large  max_dP = 0.0202969 dtDynamic: 0.0433107 a.u. or 1.04763 as
+ it: 1000 time: 1.55389 fs, time fin: 4 fs
+  order i= 1 Delta_Pk_max = 0.000125418Pv_max = 0.00288114
+  order i= 2 Delta_Pk_max = 6.9773e-07  alpha_max[i]= 0.000736423
+  order i= 3 Delta_Pk_max = 2.27441e-08  alpha_max[i]= 0.000827192
+  order i= 4 Delta_Pk_max = 8.76716e-09  alpha_max[i]= 0.00976651
+  order i= 5 Delta_Pk_max = 1.51078e-09  alpha_max[i]= 0.0483277
+  order i= 6 Delta_Pk_max = 9.81728e-11  alpha_max[i]= 0.0865712
+
+ dtDynamic: 0.0444012 a.u. or 1.07401 as  ||| max_dP = 0.0198135 epsStep =0.02 time_loop fs: 1.55389
+ P_cond_max 0.000120265
+ n_cond 1.15683e-05
+!!!!!!!! dt too large  max_dP = 0.0202625 dtDynamic: 0.0460282 a.u. or 1.11337 as
+!!!!!!!! dt too large  max_dP = 0.0202655 dtDynamic: 0.0454319 a.u. or 1.09894 as
+!!!!!!!! dt too large  max_dP = 0.0202366 dtDynamic: 0.0448367 a.u. or 1.08455 as
+!!!!!!!! dt too large  max_dP = 0.020365 dtDynamic: 0.0451988 a.u. or 1.09331 as
+!!!!!!!! dt too large  max_dP = 0.0202128 dtDynamic: 0.0443887 a.u. or 1.07371 as
+!!!!!!!! dt too large  max_dP = 0.0202221 dtDynamic: 0.0423846 a.u. or 1.02523 as
+!!!!!!!! dt too large  max_dP = 0.0203907 dtDynamic: 0.0417027 a.u. or 1.00874 as
+!!!!!!!! dt too large  max_dP = 0.0203787 dtDynamic: 0.0417217 a.u. or 1.0092 as
+!!!!!!!! dt too large  max_dP = 0.0203582 dtDynamic: 0.0424362 a.u. or 1.02648 as
+!!!!!!!! dt too large  max_dP = 0.0203467 dtDynamic: 0.0425234 a.u. or 1.02859 as
+!!!!!!!! dt too large  max_dP = 0.0203345 dtDynamic: 0.0426348 a.u. or 1.03129 as
+!!!!!!!! dt too large  max_dP = 0.0203233 dtDynamic: 0.042772 a.u. or 1.03461 as
+!!!!!!!! dt too large  max_dP = 0.020305 dtDynamic: 0.0436976 a.u. or 1.05699 as
+!!!!!!!! dt too large  max_dP = 0.0202949 dtDynamic: 0.043902 a.u. or 1.06194 as
+!!!!!!!! dt too large  max_dP = 0.0202841 dtDynamic: 0.0441294 a.u. or 1.06744 as
+!!!!!!!! dt too large  max_dP = 0.020274 dtDynamic: 0.0443814 a.u. or 1.07354 as
+Negative population, P_min = -2.79179e-10
+!!!!!!!! dt too large  max_dP = 0.0203276 dtDynamic: 0.0441494 a.u. or 1.06792 as
+!!!!!!!! dt too large  max_dP = 0.0202476 dtDynamic: 0.0434468 a.u. or 1.05093 as
+!!!!!!!! dt too large  max_dP = 0.0203909 dtDynamic: 0.043653 a.u. or 1.05592 as
+ it: 1100 time: 1.65716 fs, time fin: 4 fs
+ dtDynamic: 0.0432472 a.u. or 1.0461 as  ||| max_dP = 0.0201966 epsStep =0.02 time_loop fs: 1.65716
+ P_cond_max 0.000163271
+ n_cond 1.48603e-05
+!!!!!!!! dt too large  max_dP = 0.0204913 dtDynamic: 0.0441121 a.u. or 1.06702 as
+!!!!!!!! dt too large  max_dP = 0.0203863 dtDynamic: 0.0423176 a.u. or 1.02361 as
+!!!!!!!! dt too large  max_dP = 0.0203025 dtDynamic: 0.041086 a.u. or 0.993823 as
+Negative population, P_min = -5.70972e-11
+!!!!!!!! dt too large  max_dP = 0.0203972 dtDynamic: 0.0410321 a.u. or 0.99252 as
+!!!!!!!! dt too large  max_dP = 0.0203722 dtDynamic: 0.0410379 a.u. or 0.992658 as
+!!!!!!!! dt too large  max_dP = 0.020348 dtDynamic: 0.0410939 a.u. or 0.994014 as
+!!!!!!!! dt too large  max_dP = 0.0202888 dtDynamic: 0.0419123 a.u. or 1.01381 as
+!!!!!!!! dt too large  max_dP = 0.0202558 dtDynamic: 0.0421421 a.u. or 1.01937 as
+!!!!!!!! dt too large  max_dP = 0.0202217 dtDynamic: 0.042442 a.u. or 1.02662 as
+!!!!!!!! dt too large  max_dP = 0.0204061 dtDynamic: 0.0434823 a.u. or 1.05179 as
+!!!!!!!! dt too large  max_dP = 0.0203174 dtDynamic: 0.0422773 a.u. or 1.02264 as
+!!!!!!!! dt too large  max_dP = 0.0202521 dtDynamic: 0.0417774 a.u. or 1.01055 as
+!!!!!!!! dt too large  max_dP = 0.0203833 dtDynamic: 0.0422675 a.u. or 1.0224 as
+!!!!!!!! dt too large  max_dP = 0.02037 dtDynamic: 0.0423023 a.u. or 1.02324 as
+!!!!!!!! dt too large  max_dP = 0.0203566 dtDynamic: 0.0423646 a.u. or 1.02475 as
+!!!!!!!! dt too large  max_dP = 0.0203438 dtDynamic: 0.0424549 a.u. or 1.02694 as
+ it: 1200 time: 1.75788 fs, time fin: 4 fs
+!!!!!!!! dt too large  max_dP = 0.0202774 dtDynamic: 0.0425722 a.u. or 1.02977 as
+ dtDynamic: 0.0419898 a.u. or 1.01569 as  ||| max_dP = 0.0202774 epsStep =0.02 time_loop fs: 1.75788
+ P_cond_max 0.00021419
+ n_cond 1.84568e-05
+!!!!!!!! dt too large  max_dP = 0.0203498 dtDynamic: 0.0410403 a.u. or 0.992718 as
+!!!!!!!! dt too large  max_dP = 0.0202627 dtDynamic: 0.0401545 a.u. or 0.971291 as
+!!!!!!!! dt too large  max_dP = 0.0203746 dtDynamic: 0.0405761 a.u. or 0.981489 as
+!!!!!!!! dt too large  max_dP = 0.0203495 dtDynamic: 0.0406266 a.u. or 0.98271 as
+!!!!!!!! dt too large  max_dP = 0.0203242 dtDynamic: 0.0407274 a.u. or 0.985149 as
+!!!!!!!! dt too large  max_dP = 0.0202969 dtDynamic: 0.0408793 a.u. or 0.988822 as
+!!!!!!!! dt too large  max_dP = 0.0203017 dtDynamic: 0.0419086 a.u. or 1.01372 as
+!!!!!!!! dt too large  max_dP = 0.020211 dtDynamic: 0.0421116 a.u. or 1.01863 as
+!!!!!!!! dt too large  max_dP = 0.0204257 dtDynamic: 0.0429881 a.u. or 1.03983 as
+!!!!!!!! dt too large  max_dP = 0.0204362 dtDynamic: 0.0427183 a.u. or 1.03331 as
+!!!!!!!! dt too large  max_dP = 0.0203532 dtDynamic: 0.0412232 a.u. or 0.997141 as
+!!!!!!!! dt too large  max_dP = 0.0202629 dtDynamic: 0.0404871 a.u. or 0.979337 as
+!!!!!!!! dt too large  max_dP = 0.0202112 dtDynamic: 0.0404119 a.u. or 0.977517 as
+!!!!!!!! dt too large  max_dP = 0.0203906 dtDynamic: 0.0407471 a.u. or 0.985624 as
+!!!!!!!! dt too large  max_dP = 0.0203789 dtDynamic: 0.0407658 a.u. or 0.986077 as
+Negative population, P_min = -1.7966e-11
+!!!!!!!! dt too large  max_dP = 0.0203562 dtDynamic: 0.0412749 a.u. or 0.998393 as
+!!!!!!!! dt too large  max_dP = 0.0203442 dtDynamic: 0.0413638 a.u. or 1.00054 as
+!!!!!!!! dt too large  max_dP = 0.0203319 dtDynamic: 0.0414773 a.u. or 1.00329 as
+!!!!!!!! dt too large  max_dP = 0.0203204 dtDynamic: 0.0416162 a.u. or 1.00665 as
+ it: 1300 time: 1.85595 fs, time fin: 4 fs
+ dtDynamic: 0.0415147 a.u. or 1.00419 as  ||| max_dP = 0.0201274 epsStep =0.02 time_loop fs: 1.85595
+ P_cond_max 0.000272339
+ n_cond 2.22247e-05
+!!!!!!!! dt too large  max_dP = 0.0203013 dtDynamic: 0.042345 a.u. or 1.02428 as
+!!!!!!!! dt too large  max_dP = 0.0203158 dtDynamic: 0.0413351 a.u. or 0.999849 as
+!!!!!!!! dt too large  max_dP = 0.0202205 dtDynamic: 0.0406872 a.u. or 0.984177 as
+!!!!!!!! dt too large  max_dP = 0.020389 dtDynamic: 0.0409079 a.u. or 0.989514 as
+!!!!!!!! dt too large  max_dP = 0.0203902 dtDynamic: 0.0413456 a.u. or 1.0001 as
+!!!!!!!! dt too large  max_dP = 0.0203775 dtDynamic: 0.0413654 a.u. or 1.00058 as
+!!!!!!!! dt too large  max_dP = 0.0203536 dtDynamic: 0.0418342 a.u. or 1.01192 as
+!!!!!!!! dt too large  max_dP = 0.0203412 dtDynamic: 0.0419296 a.u. or 1.01423 as
+!!!!!!!! dt too large  max_dP = 0.0203287 dtDynamic: 0.0420507 a.u. or 1.01716 as
+!!!!!!!! dt too large  max_dP = 0.0203168 dtDynamic: 0.0421983 a.u. or 1.02073 as
+!!!!!!!! dt too large  max_dP = 0.0204005 dtDynamic: 0.042371 a.u. or 1.02491 as
+!!!!!!!! dt too large  max_dP = 0.0203549 dtDynamic: 0.040933 a.u. or 0.990123 as
+!!!!!!!! dt too large  max_dP = 0.020267 dtDynamic: 0.0401581 a.u. or 0.971378 as
+!!!!!!!! dt too large  max_dP = 0.0203653 dtDynamic: 0.0406751 a.u. or 0.983885 as
+!!!!!!!! dt too large  max_dP = 0.0203399 dtDynamic: 0.0407445 a.u. or 0.985562 as
+!!!!!!!! dt too large  max_dP = 0.0203162 dtDynamic: 0.0408649 a.u. or 0.988474 as
+!!!!!!!! dt too large  max_dP = 0.0203618 dtDynamic: 0.0410333 a.u. or 0.992549 as
+Negative population, P_min = -1.13384e-10
+!!!!!!!! dt too large  max_dP = 0.0203395 dtDynamic: 0.0416042 a.u. or 1.00636 as
+!!!!!!!! dt too large  max_dP = 0.020328 dtDynamic: 0.041728 a.u. or 1.00935 as
+!!!!!!!! dt too large  max_dP = 0.0203162 dtDynamic: 0.0418757 a.u. or 1.01293 as
+!!!!!!!! dt too large  max_dP = 0.0203051 dtDynamic: 0.0420484 a.u. or 1.0171 as
+ it: 1400 time: 1.95432 fs, time fin: 4 fs
+ dtDynamic: 0.0419996 a.u. or 1.01592 as  ||| max_dP = 0.0201169 epsStep =0.02 time_loop fs: 1.95432
+ P_cond_max 0.000339168
+ n_cond 2.62049e-05
+!!!!!!!! dt too large  max_dP = 0.020362 dtDynamic: 0.0428396 a.u. or 1.03624 as
+!!!!!!!! dt too large  max_dP = 0.0203488 dtDynamic: 0.0414453 a.u. or 1.00251 as
+!!!!!!!! dt too large  max_dP = 0.0202662 dtDynamic: 0.0405309 a.u. or 0.980395 as
+!!!!!!!! dt too large  max_dP = 0.0202089 dtDynamic: 0.0405437 a.u. or 0.980704 as
+!!!!!!!! dt too large  max_dP = 0.0203799 dtDynamic: 0.0409271 a.u. or 0.989979 as
+!!!!!!!! dt too large  max_dP = 0.020367 dtDynamic: 0.0409675 a.u. or 0.990956 as
+!!!!!!!! dt too large  max_dP = 0.020354 dtDynamic: 0.0410339 a.u. or 0.992562 as
+!!!!!!!! dt too large  max_dP = 0.0203415 dtDynamic: 0.0411266 a.u. or 0.994804 as
+!!!!!!!! dt too large  max_dP = 0.02032 dtDynamic: 0.0417273 a.u. or 1.00934 as
+!!!!!!!! dt too large  max_dP = 0.0203091 dtDynamic: 0.0418916 a.u. or 1.01331 as
+!!!!!!!! dt too large  max_dP = 0.0202978 dtDynamic: 0.0420792 a.u. or 1.01785 as
+!!!!!!!! dt too large  max_dP = 0.0203899 dtDynamic: 0.0419153 a.u. or 1.01388 as
+!!!!!!!! dt too large  max_dP = 0.0203057 dtDynamic: 0.0408196 a.u. or 0.987378 as
+!!!!!!!! dt too large  max_dP = 0.0202056 dtDynamic: 0.0405062 a.u. or 0.979799 as
+!!!!!!!! dt too large  max_dP = 0.0204005 dtDynamic: 0.040896 a.u. or 0.989227 as
+!!!!!!!! dt too large  max_dP = 0.0203781 dtDynamic: 0.0408949 a.u. or 0.989201 as
+!!!!!!!! dt too large  max_dP = 0.0203555 dtDynamic: 0.0409389 a.u. or 0.990264 as
+!!!!!!!! dt too large  max_dP = 0.0203314 dtDynamic: 0.0410283 a.u. or 0.992426 as
+!!!!!!!! dt too large  max_dP = 0.0203617 dtDynamic: 0.041861 a.u. or 1.01257 as
+!!!!!!!! dt too large  max_dP = 0.0203939 dtDynamic: 0.0419398 a.u. or 1.01447 as
+!!!!!!!! dt too large  max_dP = 0.0203679 dtDynamic: 0.0414057 a.u. or 1.00156 as
+ it: 1500 time: 2.05266 fs, time fin: 4 fs
+ dtDynamic: 0.0408593 a.u. or 0.988339 as  ||| max_dP = 0.0198596 epsStep =0.02 time_loop fs: 2.05266
+ P_cond_max 0.000414196
+ n_cond 3.02517e-05
+!!!!!!!! dt too large  max_dP = 0.0202755 dtDynamic: 0.0408593 a.u. or 0.988339 as
+!!!!!!!! dt too large  max_dP = 0.0203999 dtDynamic: 0.0410832 a.u. or 0.993756 as
+!!!!!!!! dt too large  max_dP = 0.0203764 dtDynamic: 0.0410835 a.u. or 0.993762 as
+!!!!!!!! dt too large  max_dP = 0.0203539 dtDynamic: 0.0411311 a.u. or 0.994913 as
+!!!!!!!! dt too large  max_dP = 0.0202676 dtDynamic: 0.0406278 a.u. or 0.982739 as
+!!!!!!!! dt too large  max_dP = 0.020209 dtDynamic: 0.0406288 a.u. or 0.982763 as
+!!!!!!!! dt too large  max_dP = 0.0202562 dtDynamic: 0.0405609 a.u. or 0.981121 as
+!!!!!!!! dt too large  max_dP = 0.0203991 dtDynamic: 0.0408489 a.u. or 0.988087 as
+!!!!!!!! dt too large  max_dP = 0.0203771 dtDynamic: 0.0408506 a.u. or 0.988129 as
+!!!!!!!! dt too large  max_dP = 0.0203547 dtDynamic: 0.0408965 a.u. or 0.989239 as
+!!!!!!!! dt too large  max_dP = 0.0203309 dtDynamic: 0.0409874 a.u. or 0.991438 as
+!!!!!!!! dt too large  max_dP = 0.0202737 dtDynamic: 0.0416997 a.u. or 1.00867 as
+!!!!!!!! dt too large  max_dP = 0.0203407 dtDynamic: 0.0419594 a.u. or 1.01495 as
+!!!!!!!! dt too large  max_dP = 0.0203105 dtDynamic: 0.0419108 a.u. or 1.01377 as
+!!!!!!!! dt too large  max_dP = 0.020206 dtDynamic: 0.0415963 a.u. or 1.00617 as
+!!!!!!!! dt too large  max_dP = 0.0203958 dtDynamic: 0.0419957 a.u. or 1.01583 as
+!!!!!!!! dt too large  max_dP = 0.0203724 dtDynamic: 0.0420044 a.u. or 1.01604 as
+!!!!!!!! dt too large  max_dP = 0.0203488 dtDynamic: 0.0420613 a.u. or 1.01741 as
+!!!!!!!! dt too large  max_dP = 0.0204091 dtDynamic: 0.042167 a.u. or 1.01997 as
+!!!!!!!! dt too large  max_dP = 0.0204468 dtDynamic: 0.0421482 a.u. or 1.01952 as
+!!!!!!!! dt too large  max_dP = 0.0203724 dtDynamic: 0.0408702 a.u. or 0.988602 as
+ it: 1600 time: 2.1509 fs, time fin: 4 fs
+ dtDynamic: 0.0403261 a.u. or 0.975442 as  ||| max_dP = 0.0198669 epsStep =0.02 time_loop fs: 2.1509
+ P_cond_max 0.00049633
+ n_cond 3.42809e-05
+!!!!!!!! dt too large  max_dP = 0.0202832 dtDynamic: 0.0403261 a.u. or 0.975442 as
+!!!!!!!! dt too large  max_dP = 0.020401 dtDynamic: 0.0405304 a.u. or 0.980383 as
+!!!!!!!! dt too large  max_dP = 0.020378 dtDynamic: 0.0405283 a.u. or 0.980333 as
+!!!!!!!! dt too large  max_dP = 0.0203561 dtDynamic: 0.040572 a.u. or 0.981389 as
+!!!!!!!! dt too large  max_dP = 0.0203038 dtDynamic: 0.0411464 a.u. or 0.995284 as
+!!!!!!!! dt too large  max_dP = 0.0203047 dtDynamic: 0.0413413 a.u. or 0.999998 as
+!!!!!!!! dt too large  max_dP = 0.0204047 dtDynamic: 0.0411196 a.u. or 0.994636 as
+!!!!!!!! dt too large  max_dP = 0.0203219 dtDynamic: 0.0402785 a.u. or 0.974291 as
+!!!!!!!! dt too large  max_dP = 0.0202302 dtDynamic: 0.0402287 a.u. or 0.973087 as
+!!!!!!!! dt too large  max_dP = 0.0203677 dtDynamic: 0.0405663 a.u. or 0.981253 as
+!!!!!!!! dt too large  max_dP = 0.0203439 dtDynamic: 0.0406308 a.u. or 0.982811 as
+!!!!!!!! dt too large  max_dP = 0.0203194 dtDynamic: 0.0407429 a.u. or 0.985524 as
+!!!!!!!! dt too large  max_dP = 0.0202993 dtDynamic: 0.0406785 a.u. or 0.983966 as
+!!!!!!!! dt too large  max_dP = 0.0203874 dtDynamic: 0.0407422 a.u. or 0.985508 as
+!!!!!!!! dt too large  max_dP = 0.0202393 dtDynamic: 0.0407673 a.u. or 0.986115 as
+!!!!!!!! dt too large  max_dP = 0.0204193 dtDynamic: 0.041091 a.u. or 0.993944 as
+!!!!!!!! dt too large  max_dP = 0.0203985 dtDynamic: 0.0409706 a.u. or 0.991032 as
+!!!!!!!! dt too large  max_dP = 0.0202288 dtDynamic: 0.0409737 a.u. or 0.991107 as
+!!!!!!!! dt too large  max_dP = 0.0203506 dtDynamic: 0.0413206 a.u. or 0.999497 as
+!!!!!!!! dt too large  max_dP = 0.0203255 dtDynamic: 0.0414209 a.u. or 1.00192 as
+!!!!!!!! dt too large  max_dP = 0.0203617 dtDynamic: 0.0410228 a.u. or 0.992293 as
+!!!!!!!! dt too large  max_dP = 0.0203458 dtDynamic: 0.0404518 a.u. or 0.978481 as
+ it: 1700 time: 2.24802 fs, time fin: 4 fs
+ dtDynamic: 0.0401557 a.u. or 0.971319 as  ||| max_dP = 0.0198482 epsStep =0.02 time_loop fs: 2.24802
+ P_cond_max 0.000583713
+ n_cond 3.8106e-05
+!!!!!!!! dt too large  max_dP = 0.0202503 dtDynamic: 0.0401557 a.u. or 0.971319 as
+!!!!!!!! dt too large  max_dP = 0.0203896 dtDynamic: 0.0404525 a.u. or 0.9785 as
+!!!!!!!! dt too large  max_dP = 0.0203676 dtDynamic: 0.0404732 a.u. or 0.979 as
+!!!!!!!! dt too large  max_dP = 0.0203451 dtDynamic: 0.0405377 a.u. or 0.980559 as
+!!!!!!!! dt too large  max_dP = 0.0203211 dtDynamic: 0.0406471 a.u. or 0.983206 as
+!!!!!!!! dt too large  max_dP = 0.0202635 dtDynamic: 0.0413846 a.u. or 1.00104 as
+!!!!!!!! dt too large  max_dP = 0.020249 dtDynamic: 0.0416634 a.u. or 1.00779 as
+!!!!!!!! dt too large  max_dP = 0.0204091 dtDynamic: 0.0413144 a.u. or 0.999347 as
+!!!!!!!! dt too large  max_dP = 0.020328 dtDynamic: 0.040418 a.u. or 0.977663 as
+!!!!!!!! dt too large  max_dP = 0.0202275 dtDynamic: 0.0403062 a.u. or 0.97496 as
+!!!!!!!! dt too large  max_dP = 0.0203657 dtDynamic: 0.0406499 a.u. or 0.983275 as
+!!!!!!!! dt too large  max_dP = 0.0203418 dtDynamic: 0.0407184 a.u. or 0.984932 as
+!!!!!!!! dt too large  max_dP = 0.020308 dtDynamic: 0.0405657 a.u. or 0.981238 as
+!!!!!!!! dt too large  max_dP = 0.020387 dtDynamic: 0.0406116 a.u. or 0.982347 as
+!!!!!!!! dt too large  max_dP = 0.0203585 dtDynamic: 0.0406374 a.u. or 0.982971 as
+!!!!!!!! dt too large  max_dP = 0.0202776 dtDynamic: 0.0403076 a.u. or 0.974995 as
+!!!!!!!! dt too large  max_dP = 0.0203913 dtDynamic: 0.0405509 a.u. or 0.980878 as
+!!!!!!!! dt too large  max_dP = 0.0203696 dtDynamic: 0.0405681 a.u. or 0.981295 as
+!!!!!!!! dt too large  max_dP = 0.0203473 dtDynamic: 0.0406286 a.u. or 0.98276 as
+!!!!!!!! dt too large  max_dP = 0.0203828 dtDynamic: 0.0407339 a.u. or 0.985305 as
+!!!!!!!! dt too large  max_dP = 0.0203471 dtDynamic: 0.0407683 a.u. or 0.986138 as
+!!!!!!!! dt too large  max_dP = 0.0203018 dtDynamic: 0.0404704 a.u. or 0.978932 as
+ it: 1800 time: 2.34492 fs, time fin: 4 fs
+ dtDynamic: 0.0402081 a.u. or 0.972587 as  ||| max_dP = 0.0198646 epsStep =0.02 time_loop fs: 2.34492
+ P_cond_max 0.000675461
+ n_cond 4.17062e-05
+!!!!!!!! dt too large  max_dP = 0.020271 dtDynamic: 0.0402081 a.u. or 0.972587 as
+!!!!!!!! dt too large  max_dP = 0.0203981 dtDynamic: 0.0404639 a.u. or 0.978775 as
+!!!!!!!! dt too large  max_dP = 0.0203768 dtDynamic: 0.0404677 a.u. or 0.978866 as
+!!!!!!!! dt too large  max_dP = 0.0203551 dtDynamic: 0.0405137 a.u. or 0.97998 as
+!!!!!!!! dt too large  max_dP = 0.020332 dtDynamic: 0.0406031 a.u. or 0.982142 as
+!!!!!!!! dt too large  max_dP = 0.020291 dtDynamic: 0.0407878 a.u. or 0.98661 as
+!!!!!!!! dt too large  max_dP = 0.0203109 dtDynamic: 0.0403843 a.u. or 0.976849 as
+!!!!!!!! dt too large  max_dP = 0.0203994 dtDynamic: 0.0404759 a.u. or 0.979066 as
+!!!!!!!! dt too large  max_dP = 0.0203769 dtDynamic: 0.0404771 a.u. or 0.979095 as
+!!!!!!!! dt too large  max_dP = 0.0203753 dtDynamic: 0.0409282 a.u. or 0.990005 as
+!!!!!!!! dt too large  max_dP = 0.0202913 dtDynamic: 0.0405376 a.u. or 0.980557 as
+!!!!!!!! dt too large  max_dP = 0.0203328 dtDynamic: 0.0401648 a.u. or 0.971539 as
+!!!!!!!! dt too large  max_dP = 0.0203975 dtDynamic: 0.0401826 a.u. or 0.971971 as
+!!!!!!!! dt too large  max_dP = 0.0202382 dtDynamic: 0.0401876 a.u. or 0.972091 as
+!!!!!!!! dt too large  max_dP = 0.0203507 dtDynamic: 0.0405089 a.u. or 0.979864 as
+!!!!!!!! dt too large  max_dP = 0.0203265 dtDynamic: 0.040607 a.u. or 0.982238 as
+!!!!!!!! dt too large  max_dP = 0.0203018 dtDynamic: 0.0407538 a.u. or 0.985788 as
+!!!!!!!! dt too large  max_dP = 0.0202746 dtDynamic: 0.040951 a.u. or 0.990557 as
+Preservation of particle num fail P_trace = 1.02059e-13
+!!!!!!!! dt too large  max_dP = 0.020359 dtDynamic: 0.0410821 a.u. or 0.993729 as
+Preservation of particle num fail P_trace = 1.06075e-13
+!!!!!!!! dt too large  max_dP = 0.0202803 dtDynamic: 0.0406521 a.u. or 0.983328 as
+!!!!!!!! dt too large  max_dP = 0.0203919 dtDynamic: 0.0408774 a.u. or 0.988776 as
+!!!!!!!! dt too large  max_dP = 0.0203787 dtDynamic: 0.0408936 a.u. or 0.989169 as
+!!!!!!!! dt too large  max_dP = 0.0203651 dtDynamic: 0.0409364 a.u. or 0.990204 as
+ it: 1900 time: 2.44186 fs, time fin: 4 fs
+Preservation of particle num fail P_trace = 1.09165e-13
+!!!!!!!! dt too large  max_dP = 0.0202301 dtDynamic: 0.0410066 a.u. or 0.991902 as
+ dtDynamic: 0.0405401 a.u. or 0.980619 as  ||| max_dP = 0.0202301 epsStep =0.02 time_loop fs: 2.44186
+ P_cond_max 0.000770388
+ n_cond 4.49643e-05
+!!!!!!!! dt too large  max_dP = 0.0204179 dtDynamic: 0.0413509 a.u. or 1.00023 as
+Preservation of particle num fail P_trace = 1.1375e-13
+!!!!!!!! dt too large  max_dP = 0.0203548 dtDynamic: 0.040676 a.u. or 0.983905 as
+Preservation of particle num fail P_trace = 1.17543e-13
+!!!!!!!! dt too large  max_dP = 0.0203114 dtDynamic: 0.040471 a.u. or 0.978947 as
+!!!!!!!! dt too large  max_dP = 0.0203894 dtDynamic: 0.0406011 a.u. or 0.982093 as
+!!!!!!!! dt too large  max_dP = 0.0203771 dtDynamic: 0.0406221 a.u. or 0.982601 as
+Preservation of particle num fail P_trace = 1.21955e-13
+!!!!!!!! dt too large  max_dP = 0.0202562 dtDynamic: 0.0406678 a.u. or 0.983706 as
+!!!!!!!! dt too large  max_dP = 0.0203512 dtDynamic: 0.0409565 a.u. or 0.99069 as
+!!!!!!!! dt too large  max_dP = 0.0203383 dtDynamic: 0.0410547 a.u. or 0.993066 as
+!!!!!!!! dt too large  max_dP = 0.020444 dtDynamic: 0.0411793 a.u. or 0.996081 as
+Preservation of particle num fail P_trace = 1.25755e-13
+!!!!!!!! dt too large  max_dP = 0.0203428 dtDynamic: 0.0409177 a.u. or 0.989751 as
+!!!!!!!! dt too large  max_dP = 0.0204204 dtDynamic: 0.0409837 a.u. or 0.991349 as
+Preservation of particle num fail P_trace = 1.30717e-13
+!!!!!!!! dt too large  max_dP = 0.020307 dtDynamic: 0.0408206 a.u. or 0.987403 as
+Preservation of particle num fail P_trace = 1.34077e-13
+!!!!!!!! dt too large  max_dP = 0.0203641 dtDynamic: 0.0404322 a.u. or 0.978008 as
+Preservation of particle num fail P_trace = 1.39046e-13
+!!!!!!!! dt too large  max_dP = 0.0202697 dtDynamic: 0.0402291 a.u. or 0.973095 as
+!!!!!!!! dt too large  max_dP = 0.0203711 dtDynamic: 0.0404878 a.u. or 0.979352 as
+!!!!!!!! dt too large  max_dP = 0.0203483 dtDynamic: 0.0405453 a.u. or 0.980743 as
+!!!!!!!! dt too large  max_dP = 0.0203248 dtDynamic: 0.0406482 a.u. or 0.983233 as
+!!!!!!!! dt too large  max_dP = 0.0202997 dtDynamic: 0.0407986 a.u. or 0.986871 as
+Preservation of particle num fail P_trace = 1.43594e-13
+!!!!!!!! dt too large  max_dP = 0.0202698 dtDynamic: 0.0410003 a.u. or 0.991749 as
+Preservation of particle num fail P_trace = 1.45603e-13
+!!!!!!!! dt too large  max_dP = 0.0203031 dtDynamic: 0.040929 a.u. or 0.990026 as
+!!!!!!!! dt too large  max_dP = 0.0203794 dtDynamic: 0.0411244 a.u. or 0.994752 as
+!!!!!!!! dt too large  max_dP = 0.0203572 dtDynamic: 0.041166 a.u. or 0.995758 as
+!!!!!!!! dt too large  max_dP = 0.0203396 dtDynamic: 0.0412525 a.u. or 0.99785 as
+ it: 2000 time: 2.53912 fs, time fin: 4 fs
+Preservation of particle num fail P_trace = 1.49466e-13
+  order i= 1 Delta_Pk_max = 0.000311864Pv_max = 0.00771735
+  order i= 2 Delta_Pk_max = 1.73002e-06  alpha_max[i]= 0.00211879
+  order i= 3 Delta_Pk_max = 8.0202e-08  alpha_max[i]= 0.00364599
+  order i= 4 Delta_Pk_max = 3.69582e-08  alpha_max[i]= 0.0554348
+  order i= 5 Delta_Pk_max = 7.07425e-09  alpha_max[i]= 0.32822
+  order i= 6 Delta_Pk_max = 4.78458e-10  alpha_max[i]= 0.659193
+
+ dtDynamic: 0.041219 a.u. or 0.99704 as  ||| max_dP = 0.0199695 epsStep =0.02 time_loop fs: 2.53912
+ P_cond_max 0.000866897
+ n_cond 4.78643e-05
+!!!!!!!! dt too large  max_dP = 0.0204306 dtDynamic: 0.041219 a.u. or 0.99704 as
+Preservation of particle num fail P_trace = 1.52663e-13
+!!!!!!!! dt too large  max_dP = 0.0203509 dtDynamic: 0.0405067 a.u. or 0.97981 as
+Preservation of particle num fail P_trace = 1.54025e-13
+!!!!!!!! dt too large  max_dP = 0.0202826 dtDynamic: 0.0404897 a.u. or 0.979399 as
+!!!!!!!! dt too large  max_dP = 0.0203766 dtDynamic: 0.0407242 a.u. or 0.98507 as
+!!!!!!!! dt too large  max_dP = 0.0203628 dtDynamic: 0.040771 a.u. or 0.986202 as
+!!!!!!!! dt too large  max_dP = 0.0203493 dtDynamic: 0.0408453 a.u. or 0.988002 as
+!!!!!!!! dt too large  max_dP = 0.0204209 dtDynamic: 0.040947 a.u. or 0.990461 as
+Preservation of particle num fail P_trace = 1.58143e-13
+!!!!!!!! dt too large  max_dP = 0.0203892 dtDynamic: 0.0409052 a.u. or 0.989448 as
+Preservation of particle num fail P_trace = 1.62706e-13
+!!!!!!!! dt too large  max_dP = 0.020301 dtDynamic: 0.0406337 a.u. or 0.982883 as
+!!!!!!!! dt too large  max_dP = 0.0203747 dtDynamic: 0.0408319 a.u. or 0.987676 as
+!!!!!!!! dt too large  max_dP = 0.0203526 dtDynamic: 0.0408825 a.u. or 0.9889 as
+!!!!!!!! dt too large  max_dP = 0.0203295 dtDynamic: 0.0409777 a.u. or 0.991204 as
+!!!!!!!! dt too large  max_dP = 0.0204535 dtDynamic: 0.0411198 a.u. or 0.994639 as
+Preservation of particle num fail P_trace = 1.65019e-13
+!!!!!!!! dt too large  max_dP = 0.0204008 dtDynamic: 0.0410122 a.u. or 0.992038 as
+Preservation of particle num fail P_trace = 1.67684e-13
+!!!!!!!! dt too large  max_dP = 0.0203188 dtDynamic: 0.0404798 a.u. or 0.97916 as
+!!!!!!!! dt too large  max_dP = 0.0203943 dtDynamic: 0.0406272 a.u. or 0.982725 as
+Preservation of particle num fail P_trace = 1.72104e-13
+!!!!!!!! dt too large  max_dP = 0.0203038 dtDynamic: 0.04057 a.u. or 0.981342 as
+!!!!!!!! dt too large  max_dP = 0.0203833 dtDynamic: 0.0407622 a.u. or 0.985991 as
+Preservation of particle num fail P_trace = 1.74255e-13
+!!!!!!!! dt too large  max_dP = 0.0203607 dtDynamic: 0.040358 a.u. or 0.976213 as
+!!!!!!!! dt too large  max_dP = 0.0203925 dtDynamic: 0.0403448 a.u. or 0.975895 as
+Preservation of particle num fail P_trace = 1.77926e-13
+!!!!!!!! dt too large  max_dP = 0.0202695 dtDynamic: 0.0403596 a.u. or 0.976252 as
+!!!!!!!! dt too large  max_dP = 0.0203464 dtDynamic: 0.0406195 a.u. or 0.982538 as
+!!!!!!!! dt too large  max_dP = 0.0203224 dtDynamic: 0.0407265 a.u. or 0.985127 as
+ it: 2100 time: 2.6361 fs, time fin: 4 fs
+Preservation of particle num fail P_trace = 1.82539e-13
+!!!!!!!! dt too large  max_dP = 0.0203591 dtDynamic: 0.0408366 a.u. or 0.98779 as
+ dtDynamic: 0.0401163 a.u. or 0.970367 as  ||| max_dP = 0.0203591 epsStep =0.02 time_loop fs: 2.6361
+ P_cond_max 0.00096264
+ n_cond 5.03015e-05
+Preservation of particle num fail P_trace = 1.84762e-13
+!!!!!!!! dt too large  max_dP = 0.0203492 dtDynamic: 0.0401918 a.u. or 0.972193 as
+!!!!!!!! dt too large  max_dP = 0.0203918 dtDynamic: 0.0402376 a.u. or 0.973302 as
+!!!!!!!! dt too large  max_dP = 0.0203695 dtDynamic: 0.0402539 a.u. or 0.973695 as
+Preservation of particle num fail P_trace = 1.87881e-13
+!!!!!!!! dt too large  max_dP = 0.0202428 dtDynamic: 0.0403141 a.u. or 0.975151 as
+!!!!!!!! dt too large  max_dP = 0.0203227 dtDynamic: 0.0406272 a.u. or 0.982724 as
+!!!!!!!! dt too large  max_dP = 0.0203643 dtDynamic: 0.0407817 a.u. or 0.986463 as
+!!!!!!!! dt too large  max_dP = 0.0203685 dtDynamic: 0.0408532 a.u. or 0.988191 as
+Preservation of particle num fail P_trace = 1.90858e-13
+!!!!!!!! dt too large  max_dP = 0.0204207 dtDynamic: 0.0407496 a.u. or 0.985685 as
+Preservation of particle num fail P_trace = 1.92595e-13
+!!!!!!!! dt too large  max_dP = 0.0203391 dtDynamic: 0.0402023 a.u. or 0.972448 as
+!!!!!!!! dt too large  max_dP = 0.0203923 dtDynamic: 0.0403129 a.u. or 0.975123 as
+!!!!!!!! dt too large  max_dP = 0.0203699 dtDynamic: 0.0403282 a.u. or 0.975492 as
+!!!!!!!! dt too large  max_dP = 0.0203486 dtDynamic: 0.0403878 a.u. or 0.976935 as
+Preservation of particle num fail P_trace = 1.96737e-13
+!!!!!!!! dt too large  max_dP = 0.020226 dtDynamic: 0.0404899 a.u. or 0.979403 as
+!!!!!!!! dt too large  max_dP = 0.020299 dtDynamic: 0.0408383 a.u. or 0.987831 as
+!!!!!!!! dt too large  max_dP = 0.0202715 dtDynamic: 0.0410415 a.u. or 0.992746 as
+Preservation of particle num fail P_trace = 1.98956e-13
+!!!!!!!! dt too large  max_dP = 0.0203834 dtDynamic: 0.0409073 a.u. or 0.989501 as
+Preservation of particle num fail P_trace = 2.03007e-13
+!!!!!!!! dt too large  max_dP = 0.0203114 dtDynamic: 0.0406901 a.u. or 0.984246 as
+!!!!!!!! dt too large  max_dP = 0.0203805 dtDynamic: 0.0408675 a.u. or 0.988539 as
+!!!!!!!! dt too large  max_dP = 0.0204199 dtDynamic: 0.0409067 a.u. or 0.989486 as
+Preservation of particle num fail P_trace = 2.05774e-13
+!!!!!!!! dt too large  max_dP = 0.020391 dtDynamic: 0.0404154 a.u. or 0.977601 as
+Preservation of particle num fail P_trace = 2.09919e-13
+!!!!!!!! dt too large  max_dP = 0.0203104 dtDynamic: 0.0402204 a.u. or 0.972884 as
+!!!!!!!! dt too large  max_dP = 0.0203734 dtDynamic: 0.0403978 a.u. or 0.977177 as
+!!!!!!!! dt too large  max_dP = 0.0203515 dtDynamic: 0.0404506 a.u. or 0.978454 as
+!!!!!!!! dt too large  max_dP = 0.0203287 dtDynamic: 0.040547 a.u. or 0.980786 as
+!!!!!!!! dt too large  max_dP = 0.0203527 dtDynamic: 0.0406892 a.u. or 0.984226 as
+ it: 2200 time: 2.73278 fs, time fin: 4 fs
+Preservation of particle num fail P_trace = 2.14311e-13
+ dtDynamic: 0.0406809 a.u. or 0.984023 as  ||| max_dP = 0.0199791 epsStep =0.02 time_loop fs: 2.73278
+ P_cond_max 0.00105563
+ n_cond 5.22949e-05
+!!!!!!!! dt too large  max_dP = 0.020431 dtDynamic: 0.0406809 a.u. or 0.984023 as
+Preservation of particle num fail P_trace = 2.16095e-13
+!!!!!!!! dt too large  max_dP = 0.0203496 dtDynamic: 0.040086 a.u. or 0.969633 as
+!!!!!!!! dt too large  max_dP = 0.0203975 dtDynamic: 0.0401661 a.u. or 0.971573 as
+!!!!!!!! dt too large  max_dP = 0.0203756 dtDynamic: 0.0401712 a.u. or 0.971694 as
+!!!!!!!! dt too large  max_dP = 0.020355 dtDynamic: 0.0402192 a.u. or 0.972856 as
+Preservation of particle num fail P_trace = 2.20218e-13
+!!!!!!!! dt too large  max_dP = 0.0202401 dtDynamic: 0.0403082 a.u. or 0.975009 as
+!!!!!!!! dt too large  max_dP = 0.020307 dtDynamic: 0.0406265 a.u. or 0.982709 as
+Preservation of particle num fail P_trace = 2.25413e-13
+!!!!!!!! dt too large  max_dP = 0.0203927 dtDynamic: 0.0403149 a.u. or 0.975171 as
+Preservation of particle num fail P_trace = 2.31951e-13
+!!!!!!!! dt too large  max_dP = 0.0203123 dtDynamic: 0.0401312 a.u. or 0.970727 as
+!!!!!!!! dt too large  max_dP = 0.0203715 dtDynamic: 0.0403044 a.u. or 0.974917 as
+!!!!!!!! dt too large  max_dP = 0.0203498 dtDynamic: 0.0403607 a.u. or 0.976279 as
+!!!!!!!! dt too large  max_dP = 0.020327 dtDynamic: 0.0404603 a.u. or 0.978688 as
+!!!!!!!! dt too large  max_dP = 0.0203029 dtDynamic: 0.0406055 a.u. or 0.982201 as
+Preservation of particle num fail P_trace = 2.35605e-13
+!!!!!!!! dt too large  max_dP = 0.0203359 dtDynamic: 0.0407998 a.u. or 0.9869 as
+Preservation of particle num fail P_trace = 2.38004e-13
+!!!!!!!! dt too large  max_dP = 0.0203811 dtDynamic: 0.040621 a.u. or 0.982576 as
+Preservation of particle num fail P_trace = 2.3823e-13
+!!!!!!!! dt too large  max_dP = 0.0203109 dtDynamic: 0.0404458 a.u. or 0.978338 as
+!!!!!!!! dt too large  max_dP = 0.0203923 dtDynamic: 0.0406232 a.u. or 0.982628 as
+Preservation of particle num fail P_trace = 2.40942e-13
+!!!!!!!! dt too large  max_dP = 0.020362 dtDynamic: 0.0401609 a.u. or 0.971446 as
+!!!!!!!! dt too large  max_dP = 0.0203972 dtDynamic: 0.0402005 a.u. or 0.972403 as
+!!!!!!!! dt too large  max_dP = 0.0203745 dtDynamic: 0.040206 a.u. or 0.972538 as
+Preservation of particle num fail P_trace = 2.42926e-13
+!!!!!!!! dt too large  max_dP = 0.020269 dtDynamic: 0.0402563 a.u. or 0.973753 as
+!!!!!!!! dt too large  max_dP = 0.0203843 dtDynamic: 0.0405165 a.u. or 0.980048 as
+!!!!!!!! dt too large  max_dP = 0.0203894 dtDynamic: 0.0404713 a.u. or 0.978953 as
+ it: 2300 time: 2.82909 fs, time fin: 4 fs
+Preservation of particle num fail P_trace = 2.45685e-13
+!!!!!!!! dt too large  max_dP = 0.0203054 dtDynamic: 0.0404924 a.u. or 0.979464 as
+ dtDynamic: 0.0398834 a.u. or 0.964734 as  ||| max_dP = 0.0203054 epsStep =0.02 time_loop fs: 2.82909
+ P_cond_max 0.00114419
+ n_cond 5.38188e-05
+!!!!!!!! dt too large  max_dP = 0.0203623 dtDynamic: 0.0406811 a.u. or 0.984029 as
+Preservation of particle num fail P_trace = 2.46335e-13
+!!!!!!!! dt too large  max_dP = 0.0203491 dtDynamic: 0.0403639 a.u. or 0.976356 as
+!!!!!!!! dt too large  max_dP = 0.020392 dtDynamic: 0.0404557 a.u. or 0.978576 as
+!!!!!!!! dt too large  max_dP = 0.0203698 dtDynamic: 0.0404715 a.u. or 0.978959 as
+!!!!!!!! dt too large  max_dP = 0.0203487 dtDynamic: 0.0405315 a.u. or 0.98041 as
+Preservation of particle num fail P_trace = 2.48934e-13
+!!!!!!!! dt too large  max_dP = 0.0202382 dtDynamic: 0.0406336 a.u. or 0.98288 as
+!!!!!!!! dt too large  max_dP = 0.0203083 dtDynamic: 0.0409584 a.u. or 0.990736 as
+!!!!!!!! dt too large  max_dP = 0.0204666 dtDynamic: 0.0411433 a.u. or 0.99521 as
+Preservation of particle num fail P_trace = 2.51084e-13
+!!!!!!!! dt too large  max_dP = 0.0204211 dtDynamic: 0.0405886 a.u. or 0.98179 as
+Preservation of particle num fail P_trace = 2.53108e-13
+!!!!!!!! dt too large  max_dP = 0.0203386 dtDynamic: 0.0401573 a.u. or 0.971359 as
+!!!!!!!! dt too large  max_dP = 0.020392 dtDynamic: 0.0402785 a.u. or 0.974289 as
+!!!!!!!! dt too large  max_dP = 0.0203717 dtDynamic: 0.0402943 a.u. or 0.974672 as
+!!!!!!!! dt too large  max_dP = 0.0203506 dtDynamic: 0.0403502 a.u. or 0.976025 as
+!!!!!!!! dt too large  max_dP = 0.0203284 dtDynamic: 0.0404481 a.u. or 0.978392 as
+Preservation of particle num fail P_trace = 2.55121e-13
+!!!!!!!! dt too large  max_dP = 0.0202335 dtDynamic: 0.0405906 a.u. or 0.981841 as
+Preservation of particle num fail P_trace = 2.57528e-13
+!!!!!!!! dt too large  max_dP = 0.02037 dtDynamic: 0.0403926 a.u. or 0.97705 as
+!!!!!!!! dt too large  max_dP = 0.0203973 dtDynamic: 0.0404333 a.u. or 0.978034 as
+!!!!!!!! dt too large  max_dP = 0.0203755 dtDynamic: 0.0404387 a.u. or 0.978164 as
+!!!!!!!! dt too large  max_dP = 0.0203676 dtDynamic: 0.0404873 a.u. or 0.979341 as
+Preservation of particle num fail P_trace = 2.5971e-13
+!!!!!!!! dt too large  max_dP = 0.0203079 dtDynamic: 0.0405516 a.u. or 0.980897 as
+!!!!!!!! dt too large  max_dP = 0.0204141 dtDynamic: 0.0407355 a.u. or 0.985344 as
+Preservation of particle num fail P_trace = 2.61546e-13
+!!!!!!!! dt too large  max_dP = 0.0203929 dtDynamic: 0.0402199 a.u. or 0.972873 as
+!!!!!!!! dt too large  max_dP = 0.0203913 dtDynamic: 0.0401089 a.u. or 0.970188 as
+Preservation of particle num fail P_trace = 2.65085e-13
+!!!!!!!! dt too large  max_dP = 0.0202978 dtDynamic: 0.040126 a.u. or 0.970602 as
+!!!!!!!! dt too large  max_dP = 0.0203465 dtDynamic: 0.0403281 a.u. or 0.975491 as
+!!!!!!!! dt too large  max_dP = 0.0203232 dtDynamic: 0.0404342 a.u. or 0.978057 as
+!!!!!!!! dt too large  max_dP = 0.0203364 dtDynamic: 0.0405871 a.u. or 0.981755 as
+!!!!!!!! dt too large  max_dP = 0.020436 dtDynamic: 0.040714 a.u. or 0.984824 as
+ it: 2400 time: 2.92565 fs, time fin: 4 fs
+Preservation of particle num fail P_trace = 2.66779e-13
+ dtDynamic: 0.0406422 a.u. or 0.983088 as  ||| max_dP = 0.0199787 epsStep =0.02 time_loop fs: 2.92565
+ P_cond_max 0.00122719
+ n_cond 5.4936e-05
+!!!!!!!! dt too large  max_dP = 0.0204286 dtDynamic: 0.0406422 a.u. or 0.983088 as
+Preservation of particle num fail P_trace = 2.702e-13
+!!!!!!!! dt too large  max_dP = 0.02035 dtDynamic: 0.0401675 a.u. or 0.971606 as
+!!!!!!!! dt too large  max_dP = 0.020397 dtDynamic: 0.0402661 a.u. or 0.973991 as
+!!!!!!!! dt too large  max_dP = 0.0203773 dtDynamic: 0.040272 a.u. or 0.974133 as
+!!!!!!!! dt too large  max_dP = 0.0203567 dtDynamic: 0.0403169 a.u. or 0.97522 as
+!!!!!!!! dt too large  max_dP = 0.020335 dtDynamic: 0.0404028 a.u. or 0.977296 as
+Preservation of particle num fail P_trace = 2.73013e-13
+!!!!!!!! dt too large  max_dP = 0.020237 dtDynamic: 0.040532 a.u. or 0.980422 as
+Preservation of particle num fail P_trace = 2.75453e-13
+!!!!!!!! dt too large  max_dP = 0.0203936 dtDynamic: 0.0402112 a.u. or 0.972661 as
+!!!!!!!! dt too large  max_dP = 0.020397 dtDynamic: 0.0401164 a.u. or 0.97037 as
+Preservation of particle num fail P_trace = 2.76858e-13
+!!!!!!!! dt too large  max_dP = 0.0203088 dtDynamic: 0.0401224 a.u. or 0.970513 as
+!!!!!!!! dt too large  max_dP = 0.0203533 dtDynamic: 0.0403024 a.u. or 0.97487 as
+!!!!!!!! dt too large  max_dP = 0.0203306 dtDynamic: 0.040395 a.u. or 0.977107 as
+!!!!!!!! dt too large  max_dP = 0.0203706 dtDynamic: 0.0405328 a.u. or 0.98044 as
+Preservation of particle num fail P_trace = 2.80395e-13
+!!!!!!!! dt too large  max_dP = 0.0204092 dtDynamic: 0.0403708 a.u. or 0.976523 as
+!!!!!!!! dt too large  max_dP = 0.0203975 dtDynamic: 0.0401958 a.u. or 0.97229 as
+Preservation of particle num fail P_trace = 2.83125e-13
+!!!!!!!! dt too large  max_dP = 0.0203165 dtDynamic: 0.0402007 a.u. or 0.972409 as
+!!!!!!!! dt too large  max_dP = 0.0203541 dtDynamic: 0.0403658 a.u. or 0.976403 as
+!!!!!!!! dt too large  max_dP = 0.0203316 dtDynamic: 0.0404568 a.u. or 0.978603 as
+!!!!!!!! dt too large  max_dP = 0.0203125 dtDynamic: 0.0405928 a.u. or 0.981893 as
+Preservation of particle num fail P_trace = 2.84791e-13
+!!!!!!!! dt too large  max_dP = 0.0203508 dtDynamic: 0.0407621 a.u. or 0.985988 as
+Preservation of particle num fail P_trace = 2.87959e-13
+!!!!!!!! dt too large  max_dP = 0.0203617 dtDynamic: 0.0403112 a.u. or 0.975081 as
+!!!!!!!! dt too large  max_dP = 0.0204028 dtDynamic: 0.040387 a.u. or 0.976914 as
+!!!!!!!! dt too large  max_dP = 0.0203835 dtDynamic: 0.0403815 a.u. or 0.976782 as
+!!!!!!!! dt too large  max_dP = 0.0203634 dtDynamic: 0.0404142 a.u. or 0.977574 as
+!!!!!!!! dt too large  max_dP = 0.0203566 dtDynamic: 0.040487 a.u. or 0.979333 as
+Preservation of particle num fail P_trace = 2.92016e-13
+!!!!!!!! dt too large  max_dP = 0.0203768 dtDynamic: 0.0405734 a.u. or 0.981422 as
+!!!!!!!! dt too large  max_dP = 0.0203988 dtDynamic: 0.0405277 a.u. or 0.980318 as
+ it: 2500 time: 3.02202 fs, time fin: 4 fs
+Preservation of particle num fail P_trace = 2.94569e-13
+!!!!!!!! dt too large  max_dP = 0.0203242 dtDynamic: 0.0405302 a.u. or 0.980378 as
+ dtDynamic: 0.0398836 a.u. or 0.964738 as  ||| max_dP = 0.0203242 epsStep =0.02 time_loop fs: 3.02202
+ P_cond_max 0.00130301
+ n_cond 5.56619e-05
+!!!!!!!! dt too large  max_dP = 0.0203554 dtDynamic: 0.0406813 a.u. or 0.984033 as
+!!!!!!!! dt too large  max_dP = 0.0203329 dtDynamic: 0.0407705 a.u. or 0.986191 as
+Preservation of particle num fail P_trace = 2.97598e-13
+!!!!!!!! dt too large  max_dP = 0.0203938 dtDynamic: 0.0407632 a.u. or 0.986015 as
+Preservation of particle num fail P_trace = 3.01365e-13
+!!!!!!!! dt too large  max_dP = 0.0203553 dtDynamic: 0.0404542 a.u. or 0.97854 as
+!!!!!!!! dt too large  max_dP = 0.0203832 dtDynamic: 0.0405431 a.u. or 0.980691 as
+!!!!!!!! dt too large  max_dP = 0.0203627 dtDynamic: 0.0405764 a.u. or 0.981497 as
+!!!!!!!! dt too large  max_dP = 0.020341 dtDynamic: 0.0406508 a.u. or 0.983296 as
+Preservation of particle num fail P_trace = 3.03798e-13
+!!!!!!!! dt too large  max_dP = 0.02042 dtDynamic: 0.0406718 a.u. or 0.983804 as
+Preservation of particle num fail P_trace = 3.0742e-13
+!!!!!!!! dt too large  max_dP = 0.0203349 dtDynamic: 0.0403865 a.u. or 0.976903 as
+!!!!!!!! dt too large  max_dP = 0.0203701 dtDynamic: 0.0405158 a.u. or 0.980031 as
+!!!!!!!! dt too large  max_dP = 0.0203486 dtDynamic: 0.0405753 a.u. or 0.981469 as
+!!!!!!!! dt too large  max_dP = 0.0203446 dtDynamic: 0.0406778 a.u. or 0.98395 as
+Preservation of particle num fail P_trace = 3.1119e-13
+!!!!!!!! dt too large  max_dP = 0.0204463 dtDynamic: 0.0405909 a.u. or 0.981847 as
+Preservation of particle num fail P_trace = 3.13957e-13
+!!!!!!!! dt too large  max_dP = 0.020368 dtDynamic: 0.0400924 a.u. or 0.96979 as
+!!!!!!!! dt too large  max_dP = 0.0203961 dtDynamic: 0.0401555 a.u. or 0.971314 as
+!!!!!!!! dt too large  max_dP = 0.0203766 dtDynamic: 0.0401631 a.u. or 0.971499 as
+!!!!!!!! dt too large  max_dP = 0.0203561 dtDynamic: 0.0402093 a.u. or 0.972617 as
+!!!!!!!! dt too large  max_dP = 0.0203346 dtDynamic: 0.040296 a.u. or 0.974714 as
+Preservation of particle num fail P_trace = 3.17744e-13
+!!!!!!!! dt too large  max_dP = 0.020258 dtDynamic: 0.0404256 a.u. or 0.977849 as
+!!!!!!!! dt too large  max_dP = 0.0204296 dtDynamic: 0.040709 a.u. or 0.984703 as
+Preservation of particle num fail P_trace = 3.18614e-13
+!!!!!!!! dt too large  max_dP = 0.020391 dtDynamic: 0.0402592 a.u. or 0.973824 as
+!!!!!!!! dt too large  max_dP = 0.0203888 dtDynamic: 0.0402353 a.u. or 0.973245 as
+!!!!!!!! dt too large  max_dP = 0.020367 dtDynamic: 0.0402575 a.u. or 0.973781 as
+Preservation of particle num fail P_trace = 3.2098e-13
+!!!!!!!! dt too large  max_dP = 0.0202913 dtDynamic: 0.0403227 a.u. or 0.97536 as
+!!!!!!!! dt too large  max_dP = 0.0203327 dtDynamic: 0.0405387 a.u. or 0.980584 as
+!!!!!!!! dt too large  max_dP = 0.0203635 dtDynamic: 0.0406729 a.u. or 0.983831 as
+!!!!!!!! dt too large  max_dP = 0.020356 dtDynamic: 0.0407458 a.u. or 0.985593 as
+!!!!!!!! dt too large  max_dP = 0.0204462 dtDynamic: 0.0408338 a.u. or 0.987722 as
+ it: 2600 time: 3.11861 fs, time fin: 4 fs
+Preservation of particle num fail P_trace = 3.22647e-13
+ dtDynamic: 0.0407414 a.u. or 0.985489 as  ||| max_dP = 0.0199848 epsStep =0.02 time_loop fs: 3.11861
+ P_cond_max 0.00137086
+ n_cond 5.60745e-05
+!!!!!!!! dt too large  max_dP = 0.0204261 dtDynamic: 0.0407414 a.u. or 0.985489 as
+Preservation of particle num fail P_trace = 3.24427e-13
+!!!!!!!! dt too large  max_dP = 0.0203448 dtDynamic: 0.0404237 a.u. or 0.977802 as
+!!!!!!!! dt too large  max_dP = 0.0203738 dtDynamic: 0.0405333 a.u. or 0.980455 as
+!!!!!!!! dt too large  max_dP = 0.0203598 dtDynamic: 0.0405855 a.u. or 0.981717 as
+!!!!!!!! dt too large  max_dP = 0.020356 dtDynamic: 0.0406656 a.u. or 0.983654 as
+!!!!!!!! dt too large  max_dP = 0.0203615 dtDynamic: 0.0407534 a.u. or 0.985778 as
+Preservation of particle num fail P_trace = 3.26393e-13
+!!!!!!!! dt too large  max_dP = 0.0204101 dtDynamic: 0.0408304 a.u. or 0.987641 as
+Preservation of particle num fail P_trace = 3.28752e-13
+!!!!!!!! dt too large  max_dP = 0.0203891 dtDynamic: 0.0402729 a.u. or 0.974154 as
+!!!!!!!! dt too large  max_dP = 0.0204004 dtDynamic: 0.0402705 a.u. or 0.974096 as
+!!!!!!!! dt too large  max_dP = 0.0203792 dtDynamic: 0.0402697 a.u. or 0.974077 as
+!!!!!!!! dt too large  max_dP = 0.0203593 dtDynamic: 0.0403107 a.u. or 0.97507 as
+Preservation of particle num fail P_trace = 3.31647e-13
+!!!!!!!! dt too large  max_dP = 0.0202874 dtDynamic: 0.0403913 a.u. or 0.977019 as
+!!!!!!!! dt too large  max_dP = 0.020448 dtDynamic: 0.0406155 a.u. or 0.982442 as
+Preservation of particle num fail P_trace = 3.32348e-13
+!!!!!!!! dt too large  max_dP = 0.0204038 dtDynamic: 0.0401148 a.u. or 0.970331 as
+!!!!!!!! dt too large  max_dP = 0.0203936 dtDynamic: 0.0400496 a.u. or 0.968753 as
+!!!!!!!! dt too large  max_dP = 0.0203724 dtDynamic: 0.0400621 a.u. or 0.969056 as
+Preservation of particle num fail P_trace = 3.33737e-13
+!!!!!!!! dt too large  max_dP = 0.0203077 dtDynamic: 0.0401163 a.u. or 0.970367 as
+!!!!!!!! dt too large  max_dP = 0.0203288 dtDynamic: 0.0402987 a.u. or 0.974779 as
+!!!!!!!! dt too large  max_dP = 0.0203052 dtDynamic: 0.0404398 a.u. or 0.978191 as
+!!!!!!!! dt too large  max_dP = 0.0203496 dtDynamic: 0.0406286 a.u. or 0.982758 as
+Preservation of particle num fail P_trace = 3.36276e-13
+!!!!!!!! dt too large  max_dP = 0.0203748 dtDynamic: 0.0406958 a.u. or 0.984383 as
+Preservation of particle num fail P_trace = 3.39796e-13
+!!!!!!!! dt too large  max_dP = 0.0203546 dtDynamic: 0.0405531 a.u. or 0.980932 as
+!!!!!!!! dt too large  max_dP = 0.0204072 dtDynamic: 0.0406434 a.u. or 0.983118 as
+Preservation of particle num fail P_trace = 3.40021e-13
+!!!!!!!! dt too large  max_dP = 0.0204022 dtDynamic: 0.0402549 a.u. or 0.97372 as
+!!!!!!!! dt too large  max_dP = 0.0203965 dtDynamic: 0.0402183 a.u. or 0.972833 as
+!!!!!!!! dt too large  max_dP = 0.0203742 dtDynamic: 0.0402252 a.u. or 0.973002 as
+ it: 2700 time: 3.21501 fs, time fin: 4 fs
+Preservation of particle num fail P_trace = 3.43509e-13
+!!!!!!!! dt too large  max_dP = 0.0203149 dtDynamic: 0.0402761 a.u. or 0.974233 as
+ dtDynamic: 0.0396518 a.u. or 0.959132 as  ||| max_dP = 0.0203149 epsStep =0.02 time_loop fs: 3.21501
+ P_cond_max 0.00142978
+ n_cond 5.62244e-05
+!!!!!!!! dt too large  max_dP = 0.0203308 dtDynamic: 0.0404449 a.u. or 0.978314 as
+!!!!!!!! dt too large  max_dP = 0.0203073 dtDynamic: 0.0405825 a.u. or 0.981644 as
+Preservation of particle num fail P_trace = 3.4478e-13
+!!!!!!!! dt too large  max_dP = 0.0204331 dtDynamic: 0.0404195 a.u. or 0.9777 as
+Preservation of particle num fail P_trace = 3.48162e-13
+!!!!!!!! dt too large  max_dP = 0.020358 dtDynamic: 0.0401682 a.u. or 0.971621 as
+!!!!!!!! dt too large  max_dP = 0.0203715 dtDynamic: 0.0402511 a.u. or 0.973627 as
+!!!!!!!! dt too large  max_dP = 0.0203504 dtDynamic: 0.0403075 a.u. or 0.974992 as
+!!!!!!!! dt too large  max_dP = 0.0203282 dtDynamic: 0.0404056 a.u. or 0.977366 as
+!!!!!!!! dt too large  max_dP = 0.0203047 dtDynamic: 0.0405483 a.u. or 0.980817 as
+Preservation of particle num fail P_trace = 3.49272e-13
+!!!!!!!! dt too large  max_dP = 0.0203691 dtDynamic: 0.0407386 a.u. or 0.98542 as
+Preservation of particle num fail P_trace = 3.51612e-13
+!!!!!!!! dt too large  max_dP = 0.0203665 dtDynamic: 0.0405909 a.u. or 0.981847 as
+!!!!!!!! dt too large  max_dP = 0.0203764 dtDynamic: 0.0406577 a.u. or 0.983463 as
+!!!!!!!! dt too large  max_dP = 0.0203575 dtDynamic: 0.0407048 a.u. or 0.984601 as
+Preservation of particle num fail P_trace = 3.54017e-13
+Preservation of particle num fail P_trace = 3.56299e-13
+!!!!!!!! dt too large  max_dP = 0.0203612 dtDynamic: 0.0399897 a.u. or 0.967304 as
+!!!!!!!! dt too large  max_dP = 0.0203739 dtDynamic: 0.0400658 a.u. or 0.969146 as
+!!!!!!!! dt too large  max_dP = 0.0203531 dtDynamic: 0.0401172 a.u. or 0.970389 as
+!!!!!!!! dt too large  max_dP = 0.0203312 dtDynamic: 0.0402096 a.u. or 0.972624 as
+!!!!!!!! dt too large  max_dP = 0.020308 dtDynamic: 0.0403457 a.u. or 0.975915 as
+Preservation of particle num fail P_trace = 3.58232e-13
+!!!!!!!! dt too large  max_dP = 0.0202716 dtDynamic: 0.0405285 a.u. or 0.980337 as
+Preservation of particle num fail P_trace = 3.60501e-13
+!!!!!!!! dt too large  max_dP = 0.0203852 dtDynamic: 0.0403532 a.u. or 0.976097 as
+!!!!!!!! dt too large  max_dP = 0.0203998 dtDynamic: 0.0403825 a.u. or 0.976806 as
+!!!!!!!! dt too large  max_dP = 0.0203806 dtDynamic: 0.0403829 a.u. or 0.976817 as
+!!!!!!!! dt too large  max_dP = 0.0203605 dtDynamic: 0.0404214 a.u. or 0.977746 as
+!!!!!!!! dt too large  max_dP = 0.0204098 dtDynamic: 0.0404998 a.u. or 0.979643 as
+Preservation of particle num fail P_trace = 3.62411e-13
+!!!!!!!! dt too large  max_dP = 0.0204013 dtDynamic: 0.0404803 a.u. or 0.979173 as
+!!!!!!!! dt too large  max_dP = 0.0203969 dtDynamic: 0.0404613 a.u. or 0.978712 as
+!!!!!!!! dt too large  max_dP = 0.0203759 dtDynamic: 0.0404675 a.u. or 0.978861 as
+!!!!!!!! dt too large  max_dP = 0.0203557 dtDynamic: 0.0405154 a.u. or 0.98002 as
+ it: 2800 time: 3.31141 fs, time fin: 4 fs
+Preservation of particle num fail P_trace = 3.64135e-13
+ dtDynamic: 0.0406035 a.u. or 0.982152 as  ||| max_dP = 0.0199738 epsStep =0.02 time_loop fs: 3.31141
+ P_cond_max 0.00147954
+ n_cond 5.6191e-05
+!!!!!!!! dt too large  max_dP = 0.0203997 dtDynamic: 0.0406035 a.u. or 0.982152 as
+Preservation of particle num fail P_trace = 3.65244e-13
+!!!!!!!! dt too large  max_dP = 0.0203625 dtDynamic: 0.0403909 a.u. or 0.977009 as
+!!!!!!!! dt too large  max_dP = 0.0203962 dtDynamic: 0.0404327 a.u. or 0.978021 as
+!!!!!!!! dt too large  max_dP = 0.0203739 dtDynamic: 0.0404403 a.u. or 0.978205 as
+!!!!!!!! dt too large  max_dP = 0.0203532 dtDynamic: 0.0404921 a.u. or 0.979457 as
+Negative population, P_min = -3.15236e-10
+Preservation of particle num fail P_trace = 3.67179e-13
+!!!!!!!! dt too large  max_dP = 0.020313 dtDynamic: 0.0405853 a.u. or 0.981711 as
+Negative population, P_min = -3.34606e-09
+Preservation of particle num fail P_trace = 3.69932e-13
+!!!!!!!! dt too large  max_dP = 0.0203827 dtDynamic: 0.0403708 a.u. or 0.976524 as
+!!!!!!!! dt too large  max_dP = 0.0203934 dtDynamic: 0.0404051 a.u. or 0.977352 as
+!!!!!!!! dt too large  max_dP = 0.020374 dtDynamic: 0.0404181 a.u. or 0.977666 as
+!!!!!!!! dt too large  max_dP = 0.0203534 dtDynamic: 0.0404697 a.u. or 0.978916 as
+!!!!!!!! dt too large  max_dP = 0.0203951 dtDynamic: 0.0405623 a.u. or 0.981155 as
+Negative population, P_min = -4.57084e-09
+Preservation of particle num fail P_trace = 3.69869e-13
+Negative population, P_min = -4.93734e-09
+Preservation of particle num fail P_trace = 3.72206e-13
+!!!!!!!! dt too large  max_dP = 0.0203969 dtDynamic: 0.0399876 a.u. or 0.967254 as
+!!!!!!!! dt too large  max_dP = 0.0204046 dtDynamic: 0.0399936 a.u. or 0.967399 as
+!!!!!!!! dt too large  max_dP = 0.020386 dtDynamic: 0.0399846 a.u. or 0.967182 as
+!!!!!!!! dt too large  max_dP = 0.0203666 dtDynamic: 0.0400121 a.u. or 0.967845 as
+!!!!!!!! dt too large  max_dP = 0.0203462 dtDynamic: 0.0400778 a.u. or 0.969435 as
+Negative population, P_min = -4.6417e-09
+Preservation of particle num fail P_trace = 3.74228e-13
+!!!!!!!! dt too large  max_dP = 0.0202946 dtDynamic: 0.0401838 a.u. or 0.972 as
+!!!!!!!! dt too large  max_dP = 0.0203586 dtDynamic: 0.0403924 a.u. or 0.977046 as
+Negative population, P_min = -3.70524e-09
+Preservation of particle num fail P_trace = 3.76952e-13
+!!!!!!!! dt too large  max_dP = 0.020369 dtDynamic: 0.0403867 a.u. or 0.976908 as
+!!!!!!!! dt too large  max_dP = 0.020374 dtDynamic: 0.0404482 a.u. or 0.978395 as
+!!!!!!!! dt too large  max_dP = 0.0203814 dtDynamic: 0.0404997 a.u. or 0.979642 as
+!!!!!!!! dt too large  max_dP = 0.0203661 dtDynamic: 0.0405368 a.u. or 0.980537 as
+!!!!!!!! dt too large  max_dP = 0.0203749 dtDynamic: 0.0406043 a.u. or 0.982171 as
+Negative population, P_min = -1.98463e-09
+Preservation of particle num fail P_trace = 3.79824e-13
+Preservation of particle num fail P_trace = 3.80716e-13
+!!!!!!!! dt too large  max_dP = 0.020394 dtDynamic: 0.0400223 a.u. or 0.968092 as
+!!!!!!!! dt too large  max_dP = 0.0203976 dtDynamic: 0.0400339 a.u. or 0.968375 as
+!!!!!!!! dt too large  max_dP = 0.0203786 dtDynamic: 0.0400387 a.u. or 0.96849 as
+!!!!!!!! dt too large  max_dP = 0.0203586 dtDynamic: 0.0400807 a.u. or 0.969507 as
+!!!!!!!! dt too large  max_dP = 0.0203377 dtDynamic: 0.0401622 a.u. or 0.971477 as
+ it: 2900 time: 3.40762 fs, time fin: 4 fs
+Negative population, P_min = -4.6527e-10
+Preservation of particle num fail P_trace = 3.83265e-13
+ dtDynamic: 0.0402853 a.u. or 0.974455 as  ||| max_dP = 0.0199285 epsStep =0.02 time_loop fs: 3.40762
+ P_cond_max 0.00152011
+ n_cond 5.60354e-05
+!!!!!!!! dt too large  max_dP = 0.0202895 dtDynamic: 0.0402853 a.u. or 0.974455 as
+!!!!!!!! dt too large  max_dP = 0.0203764 dtDynamic: 0.0405047 a.u. or 0.979762 as
+Negative population, P_min = -3.90395e-09
+Preservation of particle num fail P_trace = 3.83985e-13
+!!!!!!!! dt too large  max_dP = 0.0203984 dtDynamic: 0.0400082 a.u. or 0.967753 as
+!!!!!!!! dt too large  max_dP = 0.0203773 dtDynamic: 0.0400113 a.u. or 0.967827 as
+Negative population, P_min = -5.49038e-09
+Preservation of particle num fail P_trace = 3.85152e-13
+!!!!!!!! dt too large  max_dP = 0.0203338 dtDynamic: 0.0400558 a.u. or 0.968904 as
+!!!!!!!! dt too large  max_dP = 0.0203352 dtDynamic: 0.0401862 a.u. or 0.972058 as
+!!!!!!!! dt too large  max_dP = 0.0203123 dtDynamic: 0.0403143 a.u. or 0.975156 as
+!!!!!!!! dt too large  max_dP = 0.0203428 dtDynamic: 0.0404883 a.u. or 0.979364 as
+Negative population, P_min = -6.36962e-09
+Preservation of particle num fail P_trace = 3.8836e-13
+!!!!!!!! dt too large  max_dP = 0.0203946 dtDynamic: 0.0403231 a.u. or 0.975369 as
+Negative population, P_min = -7.55429e-09
+Preservation of particle num fail P_trace = 3.90681e-13
+!!!!!!!! dt too large  max_dP = 0.0203527 dtDynamic: 0.0403338 a.u. or 0.975628 as
+!!!!!!!! dt too large  max_dP = 0.0203521 dtDynamic: 0.0404276 a.u. or 0.977897 as
+!!!!!!!! dt too large  max_dP = 0.020402 dtDynamic: 0.0405229 a.u. or 0.980201 as
+Negative population, P_min = -8.44928e-09
+Preservation of particle num fail P_trace = 3.92715e-13
+!!!!!!!! dt too large  max_dP = 0.0203921 dtDynamic: 0.0399482 a.u. or 0.966301 as
+Negative population, P_min = -9.07927e-09
+Preservation of particle num fail P_trace = 3.94184e-13
+!!!!!!!! dt too large  max_dP = 0.0203489 dtDynamic: 0.0399637 a.u. or 0.966675 as
+!!!!!!!! dt too large  max_dP = 0.0203496 dtDynamic: 0.0400641 a.u. or 0.969104 as
+!!!!!!!! dt too large  max_dP = 0.0203274 dtDynamic: 0.0401633 a.u. or 0.971505 as
+!!!!!!!! dt too large  max_dP = 0.0203042 dtDynamic: 0.0403067 a.u. or 0.974973 as
+!!!!!!!! dt too large  max_dP = 0.0203557 dtDynamic: 0.040497 a.u. or 0.979576 as
+Negative population, P_min = -9.49058e-09
+Preservation of particle num fail P_trace = 3.94925e-13
+!!!!!!!! dt too large  max_dP = 0.0203888 dtDynamic: 0.0405851 a.u. or 0.981707 as
+!!!!!!!! dt too large  max_dP = 0.0204091 dtDynamic: 0.0406074 a.u. or 0.982245 as
+Negative population, P_min = -9.2407e-09
+Preservation of particle num fail P_trace = 3.98381e-13
+!!!!!!!! dt too large  max_dP = 0.020377 dtDynamic: 0.0404281 a.u. or 0.977909 as
+!!!!!!!! dt too large  max_dP = 0.0204145 dtDynamic: 0.0404736 a.u. or 0.979011 as
+Negative population, P_min = -8.05634e-09
+Preservation of particle num fail P_trace = 3.9998e-13
+!!!!!!!! dt too large  max_dP = 0.0203946 dtDynamic: 0.0402157 a.u. or 0.972771 as
+!!!!!!!! dt too large  max_dP = 0.0203911 dtDynamic: 0.0402264 a.u. or 0.973031 as
+!!!!!!!! dt too large  max_dP = 0.0203717 dtDynamic: 0.0402439 a.u. or 0.973454 as
+!!!!!!!! dt too large  max_dP = 0.0203512 dtDynamic: 0.0402998 a.u. or 0.974806 as
+!!!!!!!! dt too large  max_dP = 0.0203498 dtDynamic: 0.0403965 a.u. or 0.977145 as
+ it: 3000 time: 3.50369 fs, time fin: 4 fs
+Negative population, P_min = -5.85482e-09
+Preservation of particle num fail P_trace = 4.01345e-13
+  order i= 1 Delta_Pk_max = 0.00041419Pv_max = 0.0104324
+  order i= 2 Delta_Pk_max = 2.28004e-06  alpha_max[i]= 0.00289297
+  order i= 3 Delta_Pk_max = 5.68717e-08  alpha_max[i]= 0.0027263
+  order i= 4 Delta_Pk_max = 1.61943e-08  alpha_max[i]= 0.0260714
+  order i= 5 Delta_Pk_max = 2.33533e-09  alpha_max[i]= 0.118371
+  order i= 6 Delta_Pk_max = 1.32653e-10  alpha_max[i]= 0.203228
+
+ dtDynamic: 0.0396717 a.u. or 0.959612 as  ||| max_dP = 0.0200154 epsStep =0.02 time_loop fs: 3.50369
+ P_cond_max 0.00155191
+ n_cond 5.58214e-05
+Negative population, P_min = -6.83019e-09
+Preservation of particle num fail P_trace = 4.04242e-13
+!!!!!!!! dt too large  max_dP = 0.0203936 dtDynamic: 0.0401937 a.u. or 0.97224 as
+!!!!!!!! dt too large  max_dP = 0.0203891 dtDynamic: 0.0402063 a.u. or 0.972543 as
+!!!!!!!! dt too large  max_dP = 0.0203696 dtDynamic: 0.0402278 a.u. or 0.973063 as
+!!!!!!!! dt too large  max_dP = 0.0203489 dtDynamic: 0.0402878 a.u. or 0.974516 as
+!!!!!!!! dt too large  max_dP = 0.0203272 dtDynamic: 0.040389 a.u. or 0.976962 as
+Negative population, P_min = -7.47091e-09
+Preservation of particle num fail P_trace = 4.08272e-13
+!!!!!!!! dt too large  max_dP = 0.0203257 dtDynamic: 0.0405336 a.u. or 0.980461 as
+Negative population, P_min = -7.28378e-09
+Preservation of particle num fail P_trace = 4.11395e-13
+!!!!!!!! dt too large  max_dP = 0.0203748 dtDynamic: 0.0404387 a.u. or 0.978166 as
+!!!!!!!! dt too large  max_dP = 0.0203716 dtDynamic: 0.0404886 a.u. or 0.979373 as
+!!!!!!!! dt too large  max_dP = 0.0203508 dtDynamic: 0.0405451 a.u. or 0.980739 as
+Negative population, P_min = -6.57344e-09
+Preservation of particle num fail P_trace = 4.12975e-13
+Negative population, P_min = -5.5862e-09
+Preservation of particle num fail P_trace = 4.14386e-13
+!!!!!!!! dt too large  max_dP = 0.0203884 dtDynamic: 0.0399113 a.u. or 0.965408 as
+!!!!!!!! dt too large  max_dP = 0.0203835 dtDynamic: 0.0399341 a.u. or 0.965959 as
+!!!!!!!! dt too large  max_dP = 0.0203638 dtDynamic: 0.0399664 a.u. or 0.966741 as
+!!!!!!!! dt too large  max_dP = 0.0203429 dtDynamic: 0.0400375 a.u. or 0.968461 as
+!!!!!!!! dt too large  max_dP = 0.0203209 dtDynamic: 0.04015 a.u. or 0.971182 as
+Negative population, P_min = -4.53524e-09
+Preservation of particle num fail P_trace = 4.17426e-13
+!!!!!!!! dt too large  max_dP = 0.0204223 dtDynamic: 0.0403063 a.u. or 0.974964 as
+!!!!!!!! dt too large  max_dP = 0.0203975 dtDynamic: 0.0401928 a.u. or 0.972218 as
+!!!!!!!! dt too large  max_dP = 0.0203767 dtDynamic: 0.0401978 a.u. or 0.972339 as
+Negative population, P_min = -4.82094e-09
+Preservation of particle num fail P_trace = 4.1978e-13
+!!!!!!!! dt too large  max_dP = 0.0203425 dtDynamic: 0.0402438 a.u. or 0.97345 as
+!!!!!!!! dt too large  max_dP = 0.0203567 dtDynamic: 0.0403575 a.u. or 0.976202 as
+!!!!!!!! dt too large  max_dP = 0.0203539 dtDynamic: 0.0404433 a.u. or 0.978277 as
+Negative population, P_min = -6.09042e-09
+Preservation of particle num fail P_trace = 4.23131e-13
+Negative population, P_min = -7.21128e-09
+Preservation of particle num fail P_trace = 4.24629e-13
+!!!!!!!! dt too large  max_dP = 0.0203841 dtDynamic: 0.0398858 a.u. or 0.964792 as
+!!!!!!!! dt too large  max_dP = 0.0203761 dtDynamic: 0.039917 a.u. or 0.965546 as
+!!!!!!!! dt too large  max_dP = 0.0203559 dtDynamic: 0.0399638 a.u. or 0.966677 as
+!!!!!!!! dt too large  max_dP = 0.0203345 dtDynamic: 0.0400503 a.u. or 0.96877 as
+!!!!!!!! dt too large  max_dP = 0.0203118 dtDynamic: 0.0401793 a.u. or 0.971892 as
+ it: 3100 time: 3.5996 fs, time fin: 4 fs
+Negative population, P_min = -8.00776e-09
+Preservation of particle num fail P_trace = 4.28479e-13
+ dtDynamic: 0.0403537 a.u. or 0.97611 as  ||| max_dP = 0.0199262 epsStep =0.02 time_loop fs: 3.5996
+ P_cond_max 0.00157568
+ n_cond 5.55958e-05
+!!!!!!!! dt too large  max_dP = 0.0203685 dtDynamic: 0.0403537 a.u. or 0.97611 as
+Negative population, P_min = -8.2086e-09
+Preservation of particle num fail P_trace = 4.30241e-13
+!!!!!!!! dt too large  max_dP = 0.0203954 dtDynamic: 0.0398893 a.u. or 0.964876 as
+!!!!!!!! dt too large  max_dP = 0.0203743 dtDynamic: 0.0398982 a.u. or 0.965092 as
+!!!!!!!! dt too large  max_dP = 0.020354 dtDynamic: 0.0399486 a.u. or 0.96631 as
+Negative population, P_min = -8.04628e-09
+Preservation of particle num fail P_trace = 4.32953e-13
+!!!!!!!! dt too large  max_dP = 0.0203197 dtDynamic: 0.0400388 a.u. or 0.968492 as
+!!!!!!!! dt too large  max_dP = 0.0203094 dtDynamic: 0.040197 a.u. or 0.972318 as
+!!!!!!!! dt too large  max_dP = 0.0203811 dtDynamic: 0.0403762 a.u. or 0.976654 as
+Negative population, P_min = -7.72894e-09
+Preservation of particle num fail P_trace = 4.36412e-13
+!!!!!!!! dt too large  max_dP = 0.0203911 dtDynamic: 0.0401484 a.u. or 0.971143 as
+!!!!!!!! dt too large  max_dP = 0.0203695 dtDynamic: 0.0401659 a.u. or 0.971566 as
+Negative population, P_min = -7.34071e-09
+Preservation of particle num fail P_trace = 4.38217e-13
+!!!!!!!! dt too large  max_dP = 0.0203379 dtDynamic: 0.040226 a.u. or 0.97302 as
+!!!!!!!! dt too large  max_dP = 0.0203456 dtDynamic: 0.0403488 a.u. or 0.97599 as
+Negative population, P_min = -7.00632e-09
+Preservation of particle num fail P_trace = 4.41604e-13
+!!!!!!!! dt too large  max_dP = 0.0203989 dtDynamic: 0.0398938 a.u. or 0.964984 as
+!!!!!!!! dt too large  max_dP = 0.0203779 dtDynamic: 0.039896 a.u. or 0.965038 as
+Negative population, P_min = -7.88675e-09
+Preservation of particle num fail P_trace = 4.43577e-13
+!!!!!!!! dt too large  max_dP = 0.0203468 dtDynamic: 0.0399392 a.u. or 0.966082 as
+!!!!!!!! dt too large  max_dP = 0.0203364 dtDynamic: 0.0400437 a.u. or 0.96861 as
+!!!!!!!! dt too large  max_dP = 0.0203139 dtDynamic: 0.0401688 a.u. or 0.971637 as
+!!!!!!!! dt too large  max_dP = 0.0203634 dtDynamic: 0.040339 a.u. or 0.975754 as
+Negative population, P_min = -8.94572e-09
+Preservation of particle num fail P_trace = 4.47708e-13
+!!!!!!!! dt too large  max_dP = 0.0203869 dtDynamic: 0.040397 a.u. or 0.977157 as
+!!!!!!!! dt too large  max_dP = 0.0203747 dtDynamic: 0.0404231 a.u. or 0.977787 as
+!!!!!!!! dt too large  max_dP = 0.0203933 dtDynamic: 0.0404733 a.u. or 0.979003 as
+Negative population, P_min = -9.58066e-09
+Preservation of particle num fail P_trace = 4.50896e-13
+Negative population, P_min = -9.85745e-09
+Preservation of particle num fail P_trace = 4.54024e-13
+!!!!!!!! dt too large  max_dP = 0.0203825 dtDynamic: 0.0400624 a.u. or 0.969064 as
+!!!!!!!! dt too large  max_dP = 0.0203694 dtDynamic: 0.0400968 a.u. or 0.969895 as
+!!!!!!!! dt too large  max_dP = 0.0203487 dtDynamic: 0.040157 a.u. or 0.971351 as
+!!!!!!!! dt too large  max_dP = 0.0203266 dtDynamic: 0.0402582 a.u. or 0.9738 as
+ it: 3200 time: 3.69535 fs, time fin: 4 fs
+Negative population, P_min = -9.75404e-09
+Preservation of particle num fail P_trace = 4.56376e-13
+ dtDynamic: 0.0395381 a.u. or 0.956382 as  ||| max_dP = 0.0200098 epsStep =0.02 time_loop fs: 3.69535
+ P_cond_max 0.00159236
+ n_cond 5.53956e-05
+Negative population, P_min = -9.16638e-09
+Preservation of particle num fail P_trace = 4.6063e-13
+!!!!!!!! dt too large  max_dP = 0.0203906 dtDynamic: 0.0400503 a.u. or 0.968771 as
+!!!!!!!! dt too large  max_dP = 0.0203772 dtDynamic: 0.0400688 a.u. or 0.969217 as
+!!!!!!!! dt too large  max_dP = 0.0203571 dtDynamic: 0.0401135 a.u. or 0.970299 as
+!!!!!!!! dt too large  max_dP = 0.0203357 dtDynamic: 0.040198 a.u. or 0.972344 as
+!!!!!!!! dt too large  max_dP = 0.0203131 dtDynamic: 0.0403252 a.u. or 0.975419 as
+Negative population, P_min = -1.23073e-08
+Preservation of particle num fail P_trace = 4.63875e-13
+!!!!!!!! dt too large  max_dP = 0.0203994 dtDynamic: 0.0404977 a.u. or 0.979591 as
+!!!!!!!! dt too large  max_dP = 0.0203948 dtDynamic: 0.0403592 a.u. or 0.976243 as
+Negative population, P_min = -1.70709e-08
+Preservation of particle num fail P_trace = 4.67757e-13
+!!!!!!!! dt too large  max_dP = 0.0203664 dtDynamic: 0.0403695 a.u. or 0.976492 as
+!!!!!!!! dt too large  max_dP = 0.0203528 dtDynamic: 0.0404361 a.u. or 0.978102 as
+!!!!!!!! dt too large  max_dP = 0.0203945 dtDynamic: 0.0405299 a.u. or 0.980372 as
+Negative population, P_min = -2.10469e-08
+Preservation of particle num fail P_trace = 4.72033e-13
+Negative population, P_min = -2.42971e-08
+Preservation of particle num fail P_trace = 4.73207e-13
+!!!!!!!! dt too large  max_dP = 0.0203872 dtDynamic: 0.0398539 a.u. or 0.964019 as
+!!!!!!!! dt too large  max_dP = 0.0203732 dtDynamic: 0.0398789 a.u. or 0.964624 as
+!!!!!!!! dt too large  max_dP = 0.0203529 dtDynamic: 0.0399314 a.u. or 0.965895 as
+!!!!!!!! dt too large  max_dP = 0.0203313 dtDynamic: 0.0400239 a.u. or 0.968132 as
+!!!!!!!! dt too large  max_dP = 0.020407 dtDynamic: 0.0401592 a.u. or 0.971406 as
+Negative population, P_min = -2.68786e-08
+Preservation of particle num fail P_trace = 4.75829e-13
+!!!!!!!! dt too large  max_dP = 0.0203953 dtDynamic: 0.0400617 a.u. or 0.969046 as
+!!!!!!!! dt too large  max_dP = 0.020374 dtDynamic: 0.040071 a.u. or 0.96927 as
+!!!!!!!! dt too large  max_dP = 0.0203537 dtDynamic: 0.0401221 a.u. or 0.970507 as
+Negative population, P_min = -2.88391e-08
+Preservation of particle num fail P_trace = 4.78689e-13
+!!!!!!!! dt too large  max_dP = 0.0203348 dtDynamic: 0.0402133 a.u. or 0.972714 as
+!!!!!!!! dt too large  max_dP = 0.0203514 dtDynamic: 0.0403423 a.u. or 0.975833 as
+Negative population, P_min = -3.0284e-08
+Preservation of particle num fail P_trace = 4.80225e-13
+!!!!!!!! dt too large  max_dP = 0.0203958 dtDynamic: 0.0397964 a.u. or 0.96263 as
+Negative population, P_min = -3.12955e-08
+Preservation of particle num fail P_trace = 4.82498e-13
+!!!!!!!! dt too large  max_dP = 0.0203691 dtDynamic: 0.0398047 a.u. or 0.962829 as
+!!!!!!!! dt too large  max_dP = 0.0203545 dtDynamic: 0.0398651 a.u. or 0.96429 as
+!!!!!!!! dt too large  max_dP = 0.020333 dtDynamic: 0.0399541 a.u. or 0.966444 as
+!!!!!!!! dt too large  max_dP = 0.0203104 dtDynamic: 0.0400857 a.u. or 0.969626 as
+!!!!!!!! dt too large  max_dP = 0.0203783 dtDynamic: 0.0402624 a.u. or 0.973902 as
+ it: 3300 time: 3.79103 fs, time fin: 4 fs
+Negative population, P_min = -3.19925e-08
+Preservation of particle num fail P_trace = 4.84127e-13
+ dtDynamic: 0.0394525 a.u. or 0.95431 as  ||| max_dP = 0.0200317 epsStep =0.02 time_loop fs: 3.79103
+ P_cond_max 0.00160313
+ n_cond 5.52414e-05
+Negative population, P_min = -3.27364e-08
+Preservation of particle num fail P_trace = 4.86598e-13
+!!!!!!!! dt too large  max_dP = 0.020394 dtDynamic: 0.039793 a.u. or 0.962547 as
+!!!!!!!! dt too large  max_dP = 0.0203728 dtDynamic: 0.0398048 a.u. or 0.962831 as
+!!!!!!!! dt too large  max_dP = 0.0203526 dtDynamic: 0.0398578 a.u. or 0.964114 as
+!!!!!!!! dt too large  max_dP = 0.020331 dtDynamic: 0.0399506 a.u. or 0.966359 as
+Negative population, P_min = -3.33126e-08
+Preservation of particle num fail P_trace = 4.89177e-13
+!!!!!!!! dt too large  max_dP = 0.0203032 dtDynamic: 0.0400862 a.u. or 0.969638 as
+!!!!!!!! dt too large  max_dP = 0.0203951 dtDynamic: 0.0402774 a.u. or 0.974263 as
+Negative population, P_min = -3.37591e-08
+Preservation of particle num fail P_trace = 4.90616e-13
+!!!!!!!! dt too large  max_dP = 0.0203976 dtDynamic: 0.0400299 a.u. or 0.968277 as
+!!!!!!!! dt too large  max_dP = 0.0203766 dtDynamic: 0.0400346 a.u. or 0.968391 as
+!!!!!!!! dt too large  max_dP = 0.0203565 dtDynamic: 0.0400806 a.u. or 0.969503 as
+!!!!!!!! dt too large  max_dP = 0.020335 dtDynamic: 0.0401663 a.u. or 0.971576 as
+Negative population, P_min = -3.41234e-08
+Preservation of particle num fail P_trace = 4.94275e-13
+!!!!!!!! dt too large  max_dP = 0.0203936 dtDynamic: 0.0402946 a.u. or 0.97468 as
+Negative population, P_min = -3.44421e-08
+Preservation of particle num fail P_trace = 4.95971e-13
+!!!!!!!! dt too large  max_dP = 0.0203983 dtDynamic: 0.0398277 a.u. or 0.963387 as
+!!!!!!!! dt too large  max_dP = 0.0203775 dtDynamic: 0.039831 a.u. or 0.963465 as
+!!!!!!!! dt too large  max_dP = 0.0203576 dtDynamic: 0.039875 a.u. or 0.96453 as
+Negative population, P_min = -3.47431e-08
+Preservation of particle num fail P_trace = 4.98057e-13
+!!!!!!!! dt too large  max_dP = 0.0203323 dtDynamic: 0.0399581 a.u. or 0.966541 as
+!!!!!!!! dt too large  max_dP = 0.0203139 dtDynamic: 0.0400912 a.u. or 0.969761 as
+!!!!!!!! dt too large  max_dP = 0.0203847 dtDynamic: 0.0402612 a.u. or 0.973872 as
+!!!!!!!! dt too large  max_dP = 0.0204076 dtDynamic: 0.0402914 a.u. or 0.974603 as
+!!!!!!!! dt too large  max_dP = 0.0203897 dtDynamic: 0.0402764 a.u. or 0.97424 as
+Negative population, P_min = -3.50476e-08
+Preservation of particle num fail P_trace = 5.01153e-13
+!!!!!!!! dt too large  max_dP = 0.0203676 dtDynamic: 0.0402968 a.u. or 0.974733 as
+!!!!!!!! dt too large  max_dP = 0.0203522 dtDynamic: 0.0403608 a.u. or 0.976282 as
+Negative population, P_min = -3.53585e-08
+Preservation of particle num fail P_trace = 5.02319e-13
+!!!!!!!! dt too large  max_dP = 0.0203975 dtDynamic: 0.03997 a.u. or 0.966827 as
+Negative population, P_min = -3.56732e-08
+Preservation of particle num fail P_trace = 5.05294e-13
+!!!!!!!! dt too large  max_dP = 0.0203737 dtDynamic: 0.0399748 a.u. or 0.966944 as
+!!!!!!!! dt too large  max_dP = 0.0203564 dtDynamic: 0.0400264 a.u. or 0.968191 as
+!!!!!!!! dt too large  max_dP = 0.020335 dtDynamic: 0.040112 a.u. or 0.970264 as
+!!!!!!!! dt too large  max_dP = 0.0203487 dtDynamic: 0.0402402 a.u. or 0.973365 as
+ it: 3400 time: 3.88658 fs, time fin: 4 fs
+Negative population, P_min = -3.59926e-08
+Preservation of particle num fail P_trace = 5.08434e-13
+ dtDynamic: 0.0393253 a.u. or 0.951233 as  ||| max_dP = 0.0200241 epsStep =0.02 time_loop fs: 3.88658
+ P_cond_max 0.00160926
+ n_cond 5.51412e-05
+!!!!!!!! dt too large  max_dP = 0.0203959 dtDynamic: 0.0399626 a.u. or 0.966648 as
+Negative population, P_min = -3.63426e-08
+Preservation of particle num fail P_trace = 5.10758e-13
+!!!!!!!! dt too large  max_dP = 0.0203724 dtDynamic: 0.0399705 a.u. or 0.966841 as
+!!!!!!!! dt too large  max_dP = 0.0203546 dtDynamic: 0.0400246 a.u. or 0.968149 as
+!!!!!!!! dt too large  max_dP = 0.0203331 dtDynamic: 0.0401138 a.u. or 0.970307 as
+!!!!!!!! dt too large  max_dP = 0.0203131 dtDynamic: 0.0402458 a.u. or 0.9735 as
+Negative population, P_min = -3.6713e-08
+Preservation of particle num fail P_trace = 5.13193e-13
+!!!!!!!! dt too large  max_dP = 0.0203918 dtDynamic: 0.0402639 a.u. or 0.973937 as
+!!!!!!!! dt too large  max_dP = 0.0203703 dtDynamic: 0.0402801 a.u. or 0.974328 as
+Negative population, P_min = -3.70556e-08
+Preservation of particle num fail P_trace = 5.16139e-13
+!!!!!!!! dt too large  max_dP = 0.0203476 dtDynamic: 0.0403388 a.u. or 0.975748 as
+!!!!!!!! dt too large  max_dP = 0.0203941 dtDynamic: 0.0404426 a.u. or 0.978259 as
+Negative population, P_min = -3.73636e-08
+Preservation of particle num fail P_trace = 5.18208e-13
+!!!!!!!! dt too large  max_dP = 0.0203945 dtDynamic: 0.0397975 a.u. or 0.962654 as
+Negative population, P_min = -3.76279e-08
+Preservation of particle num fail P_trace = 5.19597e-13
+!!!!!!!! dt too large  max_dP = 0.0203716 dtDynamic: 0.0398081 a.u. or 0.962912 as
+!!!!!!!! dt too large  max_dP = 0.0203533 dtDynamic: 0.0398637 a.u. or 0.964256 as
+!!!!!!!! dt too large  max_dP = 0.0203318 dtDynamic: 0.0399552 a.u. or 0.96647 as
+!!!!!!!! dt too large  max_dP = 0.0204141 dtDynamic: 0.0400893 a.u. or 0.969713 as
+Negative population, P_min = -3.78503e-08
+Preservation of particle num fail P_trace = 5.22836e-13
+!!!!!!!! dt too large  max_dP = 0.0203932 dtDynamic: 0.0399793 a.u. or 0.967053 as
+!!!!!!!! dt too large  max_dP = 0.0203719 dtDynamic: 0.0399926 a.u. or 0.967375 as
+!!!!!!!! dt too large  max_dP = 0.0203515 dtDynamic: 0.0400479 a.u. or 0.968712 as
+!!!!!!!! dt too large  max_dP = 0.0203399 dtDynamic: 0.0401434 a.u. or 0.971022 as
+Negative population, P_min = -3.80268e-08
+Preservation of particle num fail P_trace = 5.26025e-13
+!!!!!!!! dt too large  max_dP = 0.0203487 dtDynamic: 0.040262 a.u. or 0.973892 as
+!!!!!!!! dt too large  max_dP = 0.0204503 dtDynamic: 0.0403635 a.u. or 0.976347 as
+Negative population, P_min = -3.81576e-08
+Preservation of particle num fail P_trace = 5.28609e-13
+!!!!!!!! dt too large  max_dP = 0.0203948 dtDynamic: 0.0397315 a.u. or 0.96106 as
+!!!!!!!! dt too large  max_dP = 0.0203738 dtDynamic: 0.0397416 a.u. or 0.961304 as
+Negative population, P_min = -3.82449e-08
+Preservation of particle num fail P_trace = 5.30823e-13
+!!!!!!!! dt too large  max_dP = 0.0203525 dtDynamic: 0.0397927 a.u. or 0.962539 as
+!!!!!!!! dt too large  max_dP = 0.0203322 dtDynamic: 0.0398856 a.u. or 0.964786 as
+!!!!!!!! dt too large  max_dP = 0.0203096 dtDynamic: 0.0400185 a.u. or 0.968002 as
+!!!!!!!! dt too large  max_dP = 0.0203765 dtDynamic: 0.0401966 a.u. or 0.97231 as
+ it: 3500 time: 3.98208 fs, time fin: 4 fs
+Negative population, P_min = -3.82952e-08
+Preservation of particle num fail P_trace = 5.3411e-13
+ dtDynamic: 0.039241 a.u. or 0.949195 as  ||| max_dP = 0.020032 epsStep =0.02 time_loop fs: 3.98208
+ P_cond_max 0.00161207
+ n_cond 5.50903e-05
+Negative population, P_min = -3.83133e-08
+Preservation of particle num fail P_trace = 5.3544e-13
+!!!!!!!! dt too large  max_dP = 0.0203923 dtDynamic: 0.0397257 a.u. or 0.960918 as
+!!!!!!!! dt too large  max_dP = 0.020372 dtDynamic: 0.0397408 a.u. or 0.961283 as
+!!!!!!!! dt too large  max_dP = 0.0203518 dtDynamic: 0.0397953 a.u. or 0.962603 as
+!!!!!!!! dt too large  max_dP = 0.0203302 dtDynamic: 0.0398896 a.u. or 0.964882 as
+Calculation completed day 2023/09/08 at 12.14.00 
+Elapsed time:  00 days, 00 hours, 06 minutes and 13 seconds.
+Time of computation: 373.0600 s

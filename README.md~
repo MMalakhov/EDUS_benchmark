@@ -1,0 +1,10 @@
+# EDUS_benchmark
+
+Benchmark calculations for [EDUS](https://github.com/anpicon/EDUS) code 
+
+1. Folder 08_09_2023_Benchmark_calcs:
+Calculations for [EDUS](https://github.com/anpicon/EDUS) on the [commit on Sep 8, 2023](https://github.com/anpicon/EDUS/commit/1e03db73cf039daa841a4e8bcfe9b1a9014ef8cd)
+On a [Picasso](https://www.res.es/en/res-sites/picasso) supercomputer.
+And also in the folder
+/08_09_2023_Benchmark_calcs/08_09_2023_Picasso_calculation/long_spectrum_calculation_4MPI_32OMP/SpectrumUncellArea_1.0_Nk_400epsStepAbs0.02intens5000000000.0_t1_-2.3_Ncut20_laser4_qTF_0.01_dt_0.05_delayXUV_0w_Pump_
+you can find calculations that produce Fig. 1b in https://arxiv.org/abs/2309.01190 
